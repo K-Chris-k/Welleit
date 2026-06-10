@@ -318,6 +318,21 @@ the underlying logic of the menu.
     scrollbar-width: thin;
   }
 
+  .hcs-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+    z-index: 498;
+  }
+
+  body.hcs-panel-open {
+    overflow: hidden;
+  }
+
   .hcs-dropdown::-webkit-scrollbar {
     width: 4px;
   }
@@ -335,6 +350,30 @@ the underlying logic of the menu.
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+  }
+
+  .hcs-dropdown.hcs-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .hcs-wrapper[data-open="true"] .hcs-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .hcs-overlay.hcs-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .hcs-panel-header {
+    display: none;
+  }
+
+  .hcs-panel-list {
+    display: block;
   }
 
   .hcs-item {
@@ -384,24 +423,92 @@ the underlying logic of the menu.
     line-height: 1.3;
   }
 
-  /* iPad mini / iPad Air / iPad Pro — hide text label, keep icon */
+  /* Mobile/Tablet: use bottom sheet instead of top dropdown */
   @media screen and (max-width: 1024px) {
     .hcs-trigger-text {
       display: none;
     }
-    .hcs-dropdown {
-      right: -4px;
+    .hcs-overlay {
+      display: block;
     }
-  }
-
-  /* Mobile — keep in icon bar, shift dropdown if near edge */
-  @media screen and (max-width: 699px) {
     .hcs-dropdown {
-      right: -6px;
-      min-width: 150px;
+      position: fixed;
+      top: auto;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      width: auto;
+      min-width: 0;
+      max-width: none;
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+      transform: translate3d(0, 42px, 0) scale(0.985);
+      transform-origin: center bottom;
+      transition: opacity 0.28s ease, transform 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 499;
+    }
+    .hcs-wrapper[data-open="true"] .hcs-dropdown {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    .hcs-dropdown.hcs-open {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    .hcs-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      position: relative;
+      padding: 0 44px 0 16px;
+    }
+    .hcs-panel-header::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .hcs-panel-title {
+      font-size: 1.125rem;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+    .hcs-panel-close {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: transparent;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      color: currentColor;
+      padding: 0;
+    }
+    .hcs-panel-list {
+      max-height: calc(78vh - 56px);
+      overflow-y: auto;
+      padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     }
     .hcs-item {
       padding: 9px 14px;
+    }
+    .hcs-panel-list .hcs-item {
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+    }
+    .hcs-panel-list .hcs-item-name {
+      flex: 0 0 auto;
     }
   }
 
@@ -666,23 +773,29 @@ the underlying logic of the menu.
           {%- endif -%}
 
           {%- comment -%} Custom Country Selector Block {%- endcomment -%}
-          {%- assign hcs_selector_block = false -%}
-          {%- for block in section.blocks -%}
-            {%- if block.type == 'country_selector' -%}
-              {%- assign hcs_selector_block = block -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endfor -%}
+          {%- assign hcs_selector_blocks = section.blocks | where: "type", "country_selector" -%}
+          {%- assign hcs_selector_block = hcs_selector_blocks | first -%}
+          {%- assign hcs_item_blocks = section.blocks | where: "type", "country_item" -%}
 
-          {%- if hcs_selector_block -%}
-            {%- assign hcs_item_blocks = section.blocks | where: "type", "country_item" -%}
-            {%- if hcs_item_blocks.size > 0 -%}
-              {%- assign hcs_first_item = hcs_item_blocks | first -%}
+          {%- if hcs_item_blocks.size > 0 -%}
+            {%- assign hcs_first_item = hcs_item_blocks | first -%}
+            {%- assign hcs_trigger_label = 'Select country' -%}
+            {%- assign hcs_show_trigger_text = false -%}
+            {%- assign hcs_dropdown_max_height = 300 -%}
+            {%- assign hcs_mobile_panel_title = 'Country' -%}
+
+            {%- if hcs_selector_block -%}
+              {%- assign hcs_trigger_label = hcs_selector_block.settings.trigger_label | default: 'Select country' -%}
+              {%- assign hcs_show_trigger_text = hcs_selector_block.settings.show_trigger_text -%}
+              {%- assign hcs_dropdown_max_height = hcs_selector_block.settings.dropdown_max_height | default: 300 -%}
+              {%- assign hcs_mobile_panel_title = hcs_selector_block.settings.mobile_panel_title | default: 'Country' -%}
+            {%- endif -%}
+
               <div
                 class="hcs-wrapper"
                 id="hcs-{{ section.id }}"
                 data-open="false"
-                {{ hcs_selector_block.shopify_attributes }}
+                {%- if hcs_selector_block -%}{{ hcs_selector_block.shopify_attributes }}{%- endif -%}
               >
                 <button
                   type="button"
@@ -690,7 +803,7 @@ the underlying logic of the menu.
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-controls="hcs-dropdown-{{ section.id }}"
-                  aria-label="{{ hcs_selector_block.settings.trigger_label | default: 'Select country' | escape }}"
+                  aria-label="{{ hcs_trigger_label | escape }}"
                 >
                   {%- if hcs_first_item.settings.badge_type == 'image' and hcs_first_item.settings.badge_image != blank -%}
                     <span class="hcs-trigger-badge">
@@ -700,8 +813,8 @@ the underlying logic of the menu.
                     <span class="hcs-trigger-badge">{{ hcs_first_item.settings.badge_html }}</span>
                   {%- endif -%}
 
-                  {%- if hcs_selector_block.settings.show_trigger_text -%}
-                    <span class="hcs-trigger-text">{{ hcs_selector_block.settings.trigger_label | default: 'Select Country' }}</span>
+                  {%- if hcs_show_trigger_text -%}
+                    <span class="hcs-trigger-text">{{ hcs_trigger_label }}</span>
                   {%- endif -%}
 
                   <span class="hcs-chevron" aria-hidden="true">
@@ -710,35 +823,41 @@ the underlying logic of the menu.
                     </svg>
                   </span>
                 </button>
+                <button type="button" class="hcs-overlay" aria-label="Close country selector"></button>
 
                 <div
                   class="hcs-dropdown"
                   id="hcs-dropdown-{{ section.id }}"
                   role="listbox"
-                  aria-label="{{ hcs_selector_block.settings.trigger_label | default: 'Select country' | escape }}"
-                  style="max-height: {{ hcs_selector_block.settings.dropdown_max_height | default: 300 }}px;"
+                  aria-label="{{ hcs_trigger_label | escape }}"
+                  style="max-height: {{ hcs_dropdown_max_height }}px;"
                 >
-                  {%- for hcs_block in hcs_item_blocks -%}
-                    <a
-                      href="{{ hcs_block.settings.link | default: '#' }}"
-                      class="hcs-item"
-                      role="option"
-                      {%- if hcs_block.settings.open_new_window %} target="_blank" rel="noopener noreferrer"{%- endif %}
-                      {{ hcs_block.shopify_attributes }}
-                    >
-                      {%- if hcs_block.settings.badge_type == 'image' and hcs_block.settings.badge_image != blank -%}
-                        <span class="hcs-item-badge">
-                          {{- hcs_block.settings.badge_image | image_url: width: 40 | image_tag: loading: 'lazy', alt: hcs_block.settings.country_name -}}
-                        </span>
-                      {%- elsif hcs_block.settings.badge_type == 'html' and hcs_block.settings.badge_html != blank -%}
-                        <span class="hcs-item-badge">{{ hcs_block.settings.badge_html }}</span>
-                      {%- endif -%}
-                      <span class="hcs-item-name">{{ hcs_block.settings.country_name }}</span>
-                    </a>
-                  {%- endfor -%}
+                  <div class="hcs-panel-header">
+                    <span class="hcs-panel-title">{{ hcs_mobile_panel_title }}</span>
+                    <button type="button" class="hcs-panel-close" aria-label="Close country selector">&times;</button>
+                  </div>
+                  <div class="hcs-panel-list">
+                    {%- for hcs_block in hcs_item_blocks -%}
+                      <a
+                        href="{{ hcs_block.settings.link | default: '#' }}"
+                        class="hcs-item"
+                        role="option"
+                        {%- if hcs_block.settings.open_new_window %} target="_blank" rel="noopener noreferrer"{%- endif %}
+                        {{ hcs_block.shopify_attributes }}
+                      >
+                        {%- if hcs_block.settings.badge_type == 'image' and hcs_block.settings.badge_image != blank -%}
+                          <span class="hcs-item-badge">
+                            {{- hcs_block.settings.badge_image | image_url: width: 40 | image_tag: loading: 'lazy', alt: hcs_block.settings.country_name -}}
+                          </span>
+                        {%- elsif hcs_block.settings.badge_type == 'html' and hcs_block.settings.badge_html != blank -%}
+                          <span class="hcs-item-badge">{{ hcs_block.settings.badge_html }}</span>
+                        {%- endif -%}
+                        <span class="hcs-item-name">{{ hcs_block.settings.country_name }}</span>
+                      </a>
+                    {%- endfor -%}
+                  </div>
                 </div>
               </div>
-            {%- endif -%}
           {%- endif -%}
 
           <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
@@ -833,16 +952,68 @@ the underlying logic of the menu.
 
     var hcsTrigger = hcsWrapper.querySelector('.hcs-trigger');
     var hcsDropdown = hcsWrapper.querySelector('.hcs-dropdown');
+    var hcsOverlay = hcsWrapper.querySelector('.hcs-overlay');
+    var hcsCloseButton = hcsWrapper.querySelector('.hcs-panel-close');
+    var hcsItems = hcsWrapper.querySelectorAll('.hcs-item');
+    var hcsIsPortaled = false;
     if (!hcsTrigger || !hcsDropdown) return;
 
+    function hcsIsMobileViewport() {
+      return window.matchMedia('(max-width: 1024px)').matches;
+    }
+
+    function hcsMountPortal() {
+      if (!hcsIsMobileViewport()) {
+        if (hcsIsPortaled) {
+          if (hcsOverlay) {
+            hcsTrigger.insertAdjacentElement('afterend', hcsOverlay);
+          }
+          hcsTrigger.insertAdjacentElement('afterend', hcsDropdown);
+          hcsIsPortaled = false;
+        }
+        return;
+      }
+
+      if (hcsIsPortaled) return;
+      if (hcsOverlay) {
+        document.body.appendChild(hcsOverlay);
+      }
+      document.body.appendChild(hcsDropdown);
+      hcsIsPortaled = true;
+    }
+
     function hcsSetOpen(open) {
+      hcsMountPortal();
       hcsWrapper.dataset.open = open ? 'true' : 'false';
       hcsTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      hcsDropdown.classList.toggle('hcs-open', open);
+      if (hcsOverlay) {
+        hcsOverlay.classList.toggle('hcs-open', open);
+      }
+      document.body.classList.toggle('hcs-panel-open', open && hcsIsMobileViewport());
     }
 
     hcsTrigger.addEventListener('click', function (e) {
       e.stopPropagation();
       hcsSetOpen(hcsWrapper.dataset.open !== 'true');
+    });
+
+    if (hcsOverlay) {
+      hcsOverlay.addEventListener('click', function () {
+        hcsSetOpen(false);
+      });
+    }
+
+    if (hcsCloseButton) {
+      hcsCloseButton.addEventListener('click', function () {
+        hcsSetOpen(false);
+      });
+    }
+
+    hcsItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        hcsSetOpen(false);
+      });
     });
 
     /* Close when clicking outside the wrapper */
@@ -872,6 +1043,19 @@ the underlying logic of the menu.
       document.addEventListener('shopify:block:select', function () { hcsSetOpen(false); });
       document.addEventListener('shopify:section:load', function () { hcsSetOpen(false); });
     }
+
+    window.addEventListener('resize', function () {
+      hcsMountPortal();
+      if (hcsWrapper.dataset.open !== 'true') {
+        document.body.classList.remove('hcs-panel-open');
+        return;
+      }
+      if (!hcsIsMobileViewport()) {
+        document.body.classList.remove('hcs-panel-open');
+      }
+    });
+
+    hcsMountPortal();
   })();
 </script>
 
@@ -1603,6 +1787,13 @@ the underlying logic of the menu.
           "label": "Button label text",
           "default": "Select Country",
           "info": "Displayed only when 'Show label text' is enabled."
+        },
+        {
+          "type": "text",
+          "id": "mobile_panel_title",
+          "label": "Mobile panel title",
+          "default": "Country",
+          "info": "Shown as a separate title in the mobile bottom sheet."
         },
         {
           "type": "range",
