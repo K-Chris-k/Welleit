@@ -1,0 +1,1298 @@
+{%- comment -%}
+IMPLEMENTATION NOTE: Impact header with all the menu is an extremely complex piece of code. Due to requirements from design
+team, we had to cover over hundred of potential combinations. As a consequence, this part (and all the menu snippets) are
+extremely sensitive code that should (if possible) not be touched unless you have spend enough time to study and understand
+the underlying logic of the menu.
+{%- endcomment -%}
+
+{%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+  {%- assign will_show_country_selector = true -%}
+{%- endif -%}
+
+{%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+  {%- assign will_show_locale_selector = true -%}
+{%- endif -%}
+
+<style>
+  :root {
+    --sticky-header-enabled: {%- if section.settings.enable_sticky -%}1{% else %}0{% endif %};
+  }
+
+  #shopify-section-{{ section.id }} {
+    --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
+    --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-3){% else %}var(--spacing-4-5){% endif %};
+    --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
+    --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
+    --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
+
+    {%- if section.settings.logo != blank -%}
+      --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
+      --header-logo-height: {{ section.settings.logo_mobile_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
+    {%- endif -%}
+
+    position: {% if section.settings.enable_sticky %}sticky{% else %}relative{% endif %};
+    top: 0;
+    z-index: 10;
+  }
+
+  /* Fix for dropdown menu not affecting logo and cart */
+  .header__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .link--text.focus-inset.custom-menu-item-custom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    font-weight: 600;
+
+  }
+  .header__submenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  /* Style for NEW tag */
+  .product-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  /* Drawer Ebikes Menu Styles */
+  .drawer-ebikes-menu-container {
+    margin: 0;
+    border-bottom: 1px solid rgba(var(--border-color-rgb), 0.08);
+  }
+  
+  .drawer-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem var(--spacing-6);
+    font-weight: 400;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .drawer-menu-item svg {
+    transition: transform 0.2s ease;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .drawer-menu-item[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+  
+  .drawer-submenu {
+    margin: 0;
+  }
+  
+  /* 面板中的Ebikes菜单样式 */
+  .ebikes-menu-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .ebikes-menu-content .custom-mega-menu-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
+  .ebikes-menu-content .custom-menu__left-column {
+    background: white !important;
+    padding: 15px 24px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .ebikes-menu-content .custom-menu__center-column {
+    padding: 0 !important;
+  }
+  
+  .ebikes-menu-content .custom-menu__tabs {
+    padding: 0 24px;
+  }
+  
+  .ebikes-menu-content .custom-menu__products,
+  .ebikes-menu-content .custom-menu__categories {
+    padding: 15px 24px !important;
+  }
+  
+  /* 抽屉面板中的Ebikes菜单 */
+  .drawer-ebikes-panel {
+    margin-top: 10px;
+    margin-left: -24px;
+    margin-right: -24px;
+    border-top: 1px solid rgba(var(--border-color-rgb), 0.08);
+    border-bottom: 1px solid rgba(var(--border-color-rgb), 0.08);
+    background-color: #ffffff;
+  }
+  
+  .drawer-ebikes-panel .custom-mega-menu-container {
+    padding: 0;
+  }
+  
+  .drawer-ebikes-panel .custom-menu__left-column {
+    background-color: #f7f7f7;
+    padding: 15px 0;
+  }
+  
+  .drawer-ebikes-panel .custom-menu__center-column {
+    margin-top: 0;
+  }
+  
+  .drawer-ebikes-panel .custom-menu__container {
+    gap: 0;
+  }
+  
+  .custom-mega-menu-container.drawer-mode {
+    padding: 0;
+  }
+  
+  .custom-mega-menu-container.drawer-mode .custom-menu__container {
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: 0;
+  }
+  
+  .custom-mega-menu-container.drawer-mode .custom-menu__left-column,
+  .custom-mega-menu-container.drawer-mode .custom-menu__right-column,
+  .custom-mega-menu-container.drawer-mode .custom-menu__center-column {
+    width: 100%;
+  }
+  
+  .custom-mega-menu-container.drawer-mode .custom-menu__tabs-content {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .custom-mega-menu-container.drawer-mode .custom-menu__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3);
+  }
+
+  {%- if section.settings.enable_sticky -%}
+    .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
+      top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
+    }
+  {%- endif -%}
+
+  {%- if section.settings.opening_from == 'left' -%}
+    @media screen and (max-width: 699px) {
+      .navigation-drawer {
+        --drawer-content-max-height: calc(100vh - (var(--spacing-2) * 2));
+      }
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.logo != blank -%}
+        --header-logo-width: {{ section.settings.logo_max_width }}px;
+        --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
+      {%- endif -%}
+
+      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
+    }
+  }
+
+  {%- if section.settings.layout contains 'logo_left' -%}
+    @media screen and (min-width: 1150px) {
+      {%- if section.settings.secondary_menu != blank or will_show_country_selector or will_show_locale_selector -%}
+        {%- assign max_percent = '55%' -%}
+      {%- else -%}
+        {%- assign max_percent = '70%' -%}
+      {%- endif -%}
+
+      #shopify-section-{{ section.id }} {
+        --header-grid-template: "logo main-nav secondary-nav" / {% if section.settings.layout == 'logo_left_navigation_inline' %}auto minmax(0, 1fr) minmax(0, max-content){% else %}minmax(0, 1fr) fit-content({{ max_percent }}) minmax(0, 1fr){% endif %};
+      }
+    }
+  {%- endif -%}
+  
+</style>
+
+{%- if section.settings.custom_menu != blank -%}
+  {%- if section.settings.custom_menu_position == 'top' -%}
+    {%- render 'custom-menu', section: section -%}
+  {%- endif -%}
+{%- endif -%}
+
+<height-observer variable="header">
+  <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
+    <div class="header__wrapper custom-header-wrapper">
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      MAIN NAV AREA
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      <div class="header__main-nav">
+        <div class="header__icon-list">
+          <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
+            <span class="sr-only">{{ 'header.general.open_menu' | t }}</span>
+            {%- render 'icon' with 'hamburger' -%}
+          </button>
+
+          <a href="{{ routes.search_url }}" class="tap-area sm:hidden" aria-controls="search-drawer">
+            <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
+            {%- render 'icon' with 'search' -%}
+          </a>
+
+          {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
+            <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
+              <ul class="contents" role="list">
+                {% assign ebikes_block = false %}
+                {% for block in section.blocks %}
+                  {% if block.type == 'ebikes_menu' %}
+                    {% assign ebikes_block = block %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% comment %}Display Ebikes menu at the beginning if no specific position is set{% endcomment %}
+                {% if section.settings.ebikes_menu_after == blank and ebikes_block %}
+                  <li class="header__inline-menu-item">
+                    <details class="header__menu-disclosure" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ ebikes_block.shopify_attributes }}>
+                      <summary class="header__menu-item header__menu-item--top list-menu__item link--text focus-inset custom-menu-item-custom">
+                        <span>{{ ebikes_block.settings.menu_title | default: 'Ebikes' }}</span>
+                        <span class="text-with-icon gap-2.5 bold link-faded-reverse">
+                          {%- render 'icon' with 'chevron-bottom' -%}
+                        </span>
+                      </summary>
+                      <div class="header__submenu motion-reduce global-settings-popup">
+                        <div class="custom-mega-menu-container">
+                          {%- render 'custom-menu', block: ebikes_block, section: section -%}
+                        </div>
+                      </div>
+                    </details>
+                  </li>
+                {% endif %}
+                
+                {%- for link in section.settings.menu.links -%}
+                  {% liquid
+                    assign link_title_downcase = link.title | strip | downcase
+                    assign mega_menu_block = ''
+
+                    for block in section.blocks
+                      assign menu_item_downcase = block.settings.menu_item | strip | downcase
+
+                      if menu_item_downcase == link_title_downcase
+                        assign mega_menu_block = block
+                        break
+                      endif
+                    endfor
+                  %}
+
+                  <li>
+                    {%- if link.levels == 0 and mega_menu_block == '' -%}
+                      <!-- 检查是否存在Ebikes菜单块 -->
+                      {% assign ebikes_menu_block = false %}
+                      {% for block in section.blocks %}
+                        {% if block.type == 'ebikes_menu' %}
+                          {% assign block_title_downcase = block.settings.menu_title | strip | downcase %}
+                          {% assign link_title_downcase = link.title | strip | downcase %}
+                          {% if link_title_downcase == block_title_downcase %}
+                            {% assign ebikes_menu_block = block %}
+                            {% break %}
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                      
+                      {%- if ebikes_menu_block != false -%}
+                        <details class="header__menu-disclosure" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ ebikes_menu_block.shopify_attributes }}>
+                          <summary class="header__menu-item header__menu-item--top list-menu__item link link--text focus-inset">
+                            <span>{{ ebikes_menu_block.settings.menu_title | default: 'Ebikes' }}</span>
+                            {% render 'icon-caret' %}
+                          </summary>
+                          <div class="header__submenu motion-reduce global-settings-popup">
+                            <div class="custom-mega-menu-container">
+                              {%- render 'custom-menu', block: ebikes_menu_block, section: section -%}
+                            </div>
+                          </div>
+                        </details>
+                      {%- else -%}
+                        <a href="{{ link.url }}" class="bold link-faded-reverse" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
+                      {%- endif -%}
+                    {%- else -%}
+                      {%- if mega_menu_block != '' -%}
+                        {%- comment -%}
+                        Implementation note: the designers had the desire to show a lot of different kind of menus in Impact: one standard
+                        mega menu but also a kind of "sidebar" mode when the mega-menu appears in a drawer. Unfortunately, this comes with
+                        a lot of extra complexity as we have to go through two different code path: a "details" element for the standard
+                        menu, and a full drawer for the other one.
+                        {%- endcomment -%}
+                        {%- unless mega_menu_block.settings.layout == 'drawer' -%}
+                          <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
+                            <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                              {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                            </summary>
+
+                           {%- render 'mega-menu-horizontal', link: link, mega_menu_block: mega_menu_block -%}
+                          </details>
+                        {%- else -%}
+                          <button aria-controls="navigation-drawer-{{ forloop.index }}" aria-expanded="false" class="text-with-icon gap-2.5 bold link-faded-reverse">
+                            {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                          </button>
+
+                          <navigation-drawer class="navigation-drawer drawer lg-max:hidden" id="navigation-drawer-{{ forloop.index }}" open-from="left" mega-menu>
+                            {%- render 'navigation-panel', navigation_layout: section.settings.layout, main_menu: link, is_mega_menu: true, mega_menu_block: mega_menu_block -%}
+                          </navigation-drawer>
+                        {%- endunless -%}
+                      {%- else -%}
+                        <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
+                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                            {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                          </summary>
+
+                          <div class="dropdown-menu {% if link.levels <= 1 %}dropdown-menu--restrictable{% endif %}">
+                            <ul class="contents" role="list">
+                              {%- for sub_link in link.links -%}
+                                <li>
+                                  {%- if sub_link.levels == 0 -%}
+                                    <a href="{{ sub_link.url }}" class="dropdown-menu__item group" {% if sub_link.current %}aria-current="page"{% endif %}>
+                                      <span><span class="reversed-link">{{ sub_link.title }}</span></span>
+                                    </a>
+                                  {%- else -%}
+                                    <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
+                                      <summary class="dropdown-menu__item group" {% if sub_link.url != '#' %}data-url="{{ sub_link.url | escape }}"{% endif %}>
+                                        <span><span class="reversed-link">{{- sub_link.title -}}</span></span>
+                                        {%- render 'icon' with 'chevron-right' -%}
+                                      </summary>
+
+                                      <div class="dropdown-menu">
+                                        <ul class="contents" role="list">
+                                          {%- for sub_sub_link in sub_link.links -%}
+                                            <li>
+                                              <a href="{{ sub_sub_link.url }}" class="dropdown-menu__item group" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
+                                                <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+                                              </a>
+                                            </li>
+                                          {%- endfor -%}
+                                        </ul>
+                                      </div>
+                                    </details>
+                                  {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          </div>
+                        </details>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </li>
+                  
+                  <!-- 在指定菜单项后添加Ebikes菜单 -->
+                  {% if link.title == section.settings.ebikes_menu_after %}
+                    {% if ebikes_block %}
+                      <li class="header__inline-menu-item">
+                        <details class="header__menu-disclosure" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ ebikes_block.shopify_attributes }}>
+                          <summary class="header__menu-item header__menu-item--top list-menu__item link--text focus-inset custom-menu-item-custom">
+                            <span>{{ ebikes_block.settings.menu_title | default: 'Ebikes' }}</span>
+                            <span class="text-with-icon gap-2.5 bold link-faded-reverse">
+                              {%- render 'icon' with 'chevron-bottom' -%}
+                            </span>
+                          </summary>
+                          <div class="header__submenu motion-reduce global-settings-popup">
+                            <div class="custom-mega-menu-container">
+                              {%- render 'custom-menu', block: ebikes_block, section: section -%}
+                            </div>
+                          </div>
+                        </details>
+                      </li>
+                    {% endif %}
+                  {% endif %}
+                {%- endfor -%}
+              </ul>
+            </nav>
+          {%- endif -%}
+        </div>
+      </div>
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      LOGO AREA
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- capture logo_content -%}
+        {%- if section.settings.logo -%}
+          {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
+          {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
+          <span class="sr-only">{{ shop.name }}</span>
+          {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
+
+          {%- if section.settings.transparent_logo -%}
+            {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
+          {%- endif -%}
+        {%- else -%}
+          <span class="header__logo-text h4">{{ shop.name }}</span>
+        {%- endif -%}
+      {%- endcapture -%}
+
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header__logo">
+          <a href="{{ routes.root_url }}">{{ logo_content }}</a>
+        </h1>
+      {% else %}
+        <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
+      {% endif %}
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      SECONDARY NAV AREA
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      <div class="header__secondary-nav">
+        {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
+          <nav class="header__link-list" role="navigation">
+            <ul class="contents">
+              {%- for link in section.settings.secondary_menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="bold link-faded-reverse">{{ link.title }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </nav>
+        {%- endif -%}
+
+        <div class="header__icon-list">
+          {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+            <div class="hidden md:block shrink-0">
+              {%- render 'localization-selector', type: 'country', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, popover_vertical_position: 'end' -%}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+            <div class="hidden md:block shrink-0">
+              {%- render 'localization-selector', type: 'locale', popover_vertical_position: 'end' -%}
+            </div>
+          {%- endif -%}
+
+          <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
+            <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
+            {%- render 'icon' with 'search' -%}
+          </a>
+          
+          {%- if shop.customer_accounts_enabled -%}
+            <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
+              <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
+              {%- render 'icon' with 'account' -%}
+            </a>
+          {%- endif -%}
+
+          <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
+            <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
+            {%- render 'icon' with 'cart' -%}
+
+            <div class="header__cart-count">
+              <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
+                {{- cart.item_count -}}
+              </cart-count>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </store-header>
+</height-observer>
+
+{%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  NAVIGATION MENU DRAWER
+  --------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign main_menu = section.settings.sidebar_menu | default: section.settings.menu -%}
+{%- assign secondary_menu = section.settings.secondary_menu -%}
+
+{%- if main_menu.links.size > 0 or secondary_menu.links.size > 0 -%}
+  <navigation-drawer mobile-opening="{{ section.settings.opening_from }}" open-from="left" id="header-sidebar-menu" class="navigation-drawer drawer {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" {% if request.design_mode %}handle-section-events{% endif %}>
+    <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}" {%- if section.settings.opening_from == 'bottom' -%}class="sm-max:hidden"{%- endif -%}>
+      {%- render 'icon' with 'close', width: 19, height: 19 -%}
+    </button>
+
+    {% comment %} 检查是否存在Ebikes菜单块 {% endcomment %}
+    {% assign ebikes_block_for_drawer = false %}
+    {% for block in section.blocks %}
+      {% if block.type == 'ebikes_menu' %}
+        {% assign ebikes_block_for_drawer = block %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {%- render 'navigation-panel',
+      is_mega_menu: false,
+      main_menu: main_menu,
+      secondary_menu: secondary_menu,
+      mobile_opening: section.settings.opening_from,
+      layout: section.settings.layout,
+      show_social_media: section.settings.show_social_media,
+      show_country_selector: section.settings.show_country_selector,
+      show_country_name: section.settings.show_country_name,
+      show_country_flag: section.settings.show_country_flag,
+      show_locale_selector: section.settings.show_locale_selector,
+      ebikes_block: ebikes_block_for_drawer -%}
+  </navigation-drawer>
+{%- endif -%}
+
+<script>
+  document.documentElement.style.setProperty('--header-height', Math.round(document.getElementById('shopify-section-{{ section.id }}').clientHeight) + 'px');
+  
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobileDevice) return
+    const heightObserver = document.querySelector('height-observer');
+    const bulletinBar = document.querySelector('[data-name="bulletin-bar"]');
+    if (heightObserver && bulletinBar) {
+      const heightObserverHeight = heightObserver.offsetHeight;
+      const bulletinBarHeight = bulletinBar.offsetHeight;
+      heightObserver.style.height = (heightObserverHeight + bulletinBarHeight) + 'px';
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "shopify-section--header",
+  "tag": "header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_sticky",
+      "label": "Enable sticky header",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_scroll",
+      "label": "Hide on scroll",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image",
+      "info": "280 x 80px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 40,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Image width",
+      "default": 140
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_max_width",
+      "min": 25,
+      "max": 170,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar_menu",
+      "label": "Drawer menu"
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_menu",
+      "label": "Secondary menu",
+      "info": "This menu won't show dropdown items. For best results, limit the number of links to 1 or 2."
+    },
+    {
+      "type": "select",
+      "id": "menu_open_trigger",
+      "label": "Open dropdown items on...",
+      "info": "Click mode is forced on touch devices.",
+      "options": [
+        {
+          "value": "hover",
+          "label": "Hover"
+        },
+        {
+          "value": "click",
+          "label": "Click"
+        }
+      ],
+      "default": "click"
+    },
+    {
+      "type": "header",
+      "content": "Mobile navigation"
+    },
+    {
+      "type": "select",
+      "id": "opening_from",
+      "label": "Opening from",
+      "options": [
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        }
+      ],
+      "default": "bottom"
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "info": "When centering navigation, you should limit your links to 5.",
+      "options": [
+        {
+          "value": "logo_left_navigation_inline",
+          "label": "Logo left, navigation inline"
+        },
+        {
+          "value": "logo_left_navigation_center",
+          "label": "Logo left, navigation center"
+        },
+        {
+          "value": "logo_center_navigation_inline",
+          "label": "Logo center, navigation inline"
+        },
+        {
+          "value": "drawer",
+          "label": "Drawer"
+        }
+      ],
+      "default": "logo_left_navigation_inline"
+    },
+    {
+      "type": "header",
+      "content": "Social media",
+      "info": "This will only show in the drawer navigation."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_media",
+      "label": "Show social media",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Country/region selector",
+      "info": "To add a country/region, go to your [markets settings.](/admin/settings/markets). For best user experience, we recommend to keep this setting off and to use the free [Shopify Geolocation app](https://apps.shopify.com/geolocation)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country/region selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_flag",
+      "label": "Show country flag",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_name",
+      "label": "Show country name",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Transparent header",
+      "info": "Add a section on first position which allows transparent header such as slideshow or image with text overlay."
+    },
+    {
+      "type": "color",
+      "id": "transparent_header_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "transparent_logo",
+      "label": "Logo image",
+      "info": "Use the same dimensions as main logo."
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "checkbox",
+      "id": "reduce_padding",
+      "label": "Reduce padding",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "background_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Background opacity",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "background_blur_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Background blur radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Custom Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "custom_menu",
+      "label": "Custom Menu",
+      "info": "Select a menu to display as a custom menu"
+    },
+    {
+      "type": "select",
+      "id": "custom_menu_position",
+      "label": "Custom Menu Position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top of header"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom of header"
+        }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "html",
+      "id": "ebikes_menu_after",
+      "label": "Place Ebikes menu after item",
+      "info": "Enter the menu item title after which the Ebikes menu should appear. Leave blank to display at the beginning of the menu."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega_menu",
+      "name": "Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_item",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://support.maestrooo.com/article/180-navigation-enabling-and-configuring-mega-navigation)."
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Layout",
+          "options": [
+            {
+              "value": "horizontal",
+              "label": "Horizontal"
+            },
+            {
+              "value": "horizontal_center",
+              "label": "Horizontal (centered)"
+            },
+            {
+              "value": "drawer",
+              "label": "Drawer"
+            }
+          ],
+          "default": "horizontal"
+        },
+        {
+          "type": "select",
+          "id": "submenu_style",
+          "label": "Submenu",
+          "options": [
+            {
+              "value": "bold_text",
+              "label": "Bold - text only"
+            },
+            {
+              "value": "bold_heading",
+              "label": "Bold - headings only"
+            }
+          ],
+          "default": "bold_heading"
+        },
+        {
+          "type": "header",
+          "content": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image",
+          "info": "1200 x 1200px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "image_heading_1",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "image_link_1",
+          "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "image_text_color_1",
+          "label": "Heading",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image",
+          "info": "1200 x 1200px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "image_heading_2",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "image_link_2",
+          "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "image_text_color_2",
+          "label": "Heading",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Image 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image",
+          "info": "1200 x 1200px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "image_heading_3",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "image_link_3",
+          "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "image_text_color_3",
+          "label": "Heading",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Featured product"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "color",
+          "id": "product_card_background",
+          "label": "Card background"
+        },
+        {
+          "type": "color",
+          "id": "product_card_text_color",
+          "label": "Card text"
+        },
+        {
+          "type": "header",
+          "content": "Appearance"
+        },
+        {
+          "type": "select",
+          "id": "promo_content_layout",
+          "label": "Promotional content layout",
+          "info": "To improve readability, layout can be changed automatically depending on the screen size, menu column count and promotional content. [Learn more](https://support.maestrooo.com/article/296-navigation-understanding-impact-mega-menu-strategy)",
+          "options": [
+            {
+              "value": "grid",
+              "label": "Grid"
+            },
+            {
+              "value": "collage",
+              "label": "Collage"
+            },
+            {
+              "value": "carousel",
+              "label": "Carousel"
+            }
+          ],
+          "default": "grid"
+        },
+        {
+          "type": "checkbox",
+          "id": "stretch_promo",
+          "label": "Stretch to fill",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "drawer_link_image",
+          "label": "Drawer link image",
+          "options": [
+            {
+              "value": "hide",
+              "label": "Hide"
+            },
+            {
+              "value": "show",
+              "label": "Show product image"
+            }
+          ],
+          "default": "hide"
+        }
+      ]
+    },
+    {
+      "type": "ebikes_menu",
+      "name": "Ebikes Menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Menu title",
+          "default": "Ebikes"
+        },
+        {
+          "type": "header",
+          "content": "Left Column Settings"
+        },
+        {
+          "type": "text",
+          "id": "left_column_title",
+          "label": "Left Column Title",
+          "default": "Tour Our Ebike Collection"
+        },
+        {
+          "type": "link_list",
+          "id": "left_menu",
+          "label": "Left Menu Links",
+          "info": "If not set, default links will be displayed"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_certifications",
+          "label": "Show Certifications",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Certification Badge 1"
+        },
+        {
+          "type": "text",
+          "id": "certification_1_title",
+          "label": "Badge 1 Title",
+          "default": "1,800+ Bike Shops"
+        },
+        {
+          "type": "text",
+          "id": "certification_1_text",
+          "label": "Badge 1 Description",
+          "default": "Ebike service & test rides"
+        },
+        {
+          "type": "image_picker",
+          "id": "certification_1_icon",
+          "label": "Badge 1 Icon"
+        },
+        {
+          "type": "header",
+          "content": "Certification Badge 2"
+        },
+        {
+          "type": "text",
+          "id": "certification_2_title",
+          "label": "Badge 2 Title",
+          "default": "Safety Certified"
+        },
+        {
+          "type": "text",
+          "id": "certification_2_text",
+          "label": "Badge 2 Description",
+          "default": "Certified in accordance with UL 2849 / UL 2271"
+        },
+        {
+          "type": "image_picker",
+          "id": "certification_2_icon",
+          "label": "Badge 2 Icon"
+        },
+        {
+          "type": "header",
+          "content": "Certification Badge 3"
+        },
+        {
+          "type": "text",
+          "id": "certification_3_title",
+          "label": "Badge 3 Title",
+          "default": "Time Magazine Award"
+        },
+        {
+          "type": "text",
+          "id": "certification_3_text",
+          "label": "Badge 3 Description",
+          "default": "Ranked #1 Ebike Brand"
+        },
+        {
+          "type": "image_picker",
+          "id": "certification_3_icon",
+          "label": "Badge 3 Icon"
+        },
+        {
+          "type": "header",
+          "content": "Tab Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_tabs",
+          "label": "Show Tabs",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "tab1_title",
+          "label": "Tab 1 Title",
+          "default": "Shop By Model"
+        },
+        {
+          "type": "collection",
+          "id": "tab1_collection",
+          "label": "Tab 1 Collection",
+          "info": "Select the product collection to display in the first tab"
+        },
+        {
+          "type": "text",
+          "id": "tab2_title",
+          "label": "Tab 2 Title",
+          "default": "Shop By Category"
+        },
+        {
+          "type": "link_list",
+          "id": "tab2_menu",
+          "label": "Tab 2 Menu",
+          "info": "Select the category menu to display in the second tab"
+        },
+        {
+          "type": "header",
+          "content": "Product Badge Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badges",
+          "label": "Show Product Badges",
+          "default": true
+        },
+        {
+          "type": "html",
+          "id": "badge_1_icon",
+          "label": "Badge 1 Icon (SVG)",
+          "info": "Enter SVG code"
+        },
+        {
+          "type": "text",
+          "id": "badge_1_text",
+          "label": "Badge 1 Text",
+          "default": "2 Year Warranty"
+        },
+        {
+          "type": "html",
+          "id": "badge_2_icon",
+          "label": "Badge 2 Icon (SVG)",
+          "info": "Enter SVG code"
+        },
+        {
+          "type": "text",
+          "id": "badge_2_text",
+          "label": "Badge 2 Text",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "html",
+          "id": "badge_3_icon",
+          "label": "Badge 3 Icon (SVG)",
+          "info": "Enter SVG code"
+        },
+        {
+          "type": "text",
+          "id": "badge_3_text",
+          "label": "Badge 3 Text",
+          "default": "14-Day Returns"
+        },
+        {
+          "type": "header",
+          "content": "Right Side Promotion Settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "right_promotion_image",
+          "label": "Promotion Image",
+          "info": "Recommended size 600x800px"
+        },
+        {
+          "type": "url",
+          "id": "right_promotion_url",
+          "label": "Promotion Link"
+        },
+        {
+          "type": "text",
+          "id": "right_promotion_title",
+          "label": "Promotion Title (for image alt)",
+          "default": "Special Promotion"
+        }
+      ]
+    },
+    {
+      "type": "ebikes_product",
+      "name": "Ebikes Product Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "tab_id",
+          "label": "Display in Tab",
+          "options": [
+            {
+              "value": "tab1",
+              "label": "Tab 1 (Models)"
+            },
+            {
+              "value": "tab2",
+              "label": "Tab 2 (Categories)"
+            }
+          ],
+          "default": "tab1"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image",
+          "info": "Recommended size 300x300px"
+        },
+        {
+          "type": "url",
+          "id": "product_url",
+          "label": "Product Link"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product Title"
+        },
+        {
+          "type": "text",
+          "id": "product_subtitle",
+          "label": "Product Subtitle"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_tag",
+          "label": "Show NEW Tag",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "tag_text",
+          "label": "Tag Text",
+          "default": "NEW"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header",
+      "blocks": [
+        {
+          "type": "ebikes_menu",
+          "settings": {
+            "menu_title": "Ebikes"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

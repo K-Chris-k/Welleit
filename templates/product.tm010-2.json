@@ -1,0 +1,2714 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h6"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "liquid_9X6NrU": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<afterpay-placement\n data-locale = {{localization.language.iso_code |\nappend: \"_\" | append: localization.country.iso_code }}\n data-currency = {{cart.currency.iso_code }}\n data-amount = {{ product.price |\nmoney_without_currency }}\n >\n </afterpay-placement>"
+          }
+        },
+        "inventory_hBWegP": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 20
+          }
+        },
+        "klarna_on_site_messaging_app_block_VahHrN": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "disabled": true,
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": "or"
+          }
+        },
+        "liquid_8XgkWU": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_IzN0RlkzRXUvMXdQcnE0aWZOM0hmZzgwLXhoI0h4TEcsZDBlYTE5YjUtYjEzMi00NGJkLWFlZjMtYzYwYWUxMGI4OTI3LDEsZWM1T3V5czdEVlN1b2Y1S2J1NHRJYW12M3I1aVZNVTlnWWFHM3dGVUhwZz0\"\n    ></script>\n  <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
+          }
+        },
+        "image_J8jqff": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/afterpay_22aeeb34-d00e-42e0-a340-58b87216482b.png",
+            "heading": "<p>Pay with Ease</p>",
+            "huobi": false,
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "product_variations_X8xFdE": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "Weight Capacity",
+            "option_value_metafield": "custom.variation_value",
+            "products": "{{ product.metafields.custom.variation_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "product_countdown_ibgA9y": {
+          "type": "product_countdown",
+          "disabled": true,
+          "settings": {
+            "coupoun_enable": true,
+            "heading": "🎁Christmas Sale, Ends After:",
+            "time": "2025-12-10 15:59:59",
+            "bakc_background": "#ffffff",
+            "color_background": "#f83a3a",
+            "ending_text": ""
+          }
+        },
+        "text_gctmer": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>⚠️<strong>Lowest Price Ever, No Coupons Can Be Stacked</strong></p>"
+          }
+        },
+        "text_r9PEGq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>⚠️ Prices Go Up After 4/30! ⏳ Due to Upcoming Tariff 📈</strong><br/><br/><strong>Lock Your Price Before Price Adjustment 🔒</strong></p>"
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "code_xFNJBj": {
+          "type": "code",
+          "disabled": true,
+          "settings": {
+            "box-width": 73,
+            "svg_background": "#f0c417",
+            "discount_amount": "30",
+            "ending_times": "Auto $30 off when checkout",
+            "discount_code": "BFCM10",
+            "show_code": false,
+            "box-widths": 40,
+            "svg_backgrounds": "",
+            "discount_amounts": "",
+            "ending_timess": "",
+            "discount_codes": "",
+            "successfully": "Code copied successfully and auto applied at checkout"
+          }
+        },
+        "text_Ue3mQ7": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>⏰<strong>Pink Color Flash Sale：$229.99</strong></p>"
+          }
+        },
+        "text_HyH7PE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Pre Sale Alert!</strong> 🛒🔥 TM010 has been sold more than 1500 units due to high demand In December 🚀✨<br/><br/><strong>Orders of Black Color </strong>after 13 Jan will be shipped around 23 Jan. ⏳📅 Don’t miss out! 🕒</p><p>Attention: ⚠️🌪️ Due to the CA wildfires 🔥 and recent bad weather 🌧️, the original shipping date of TM010 black, which was originally scheduled for January 23, will be postponed to the end of January 📦📅.</p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": true,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "text_LzptXQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>💥Black Friday On <strong>Color Pink</strong>: 💰<strong>Only $189</strong></p>"
+          }
+        },
+        "text_9DHzqr": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Free </strong>Tax+ <strong>Fast</strong> Shipping + 🚀<strong>30Day </strong>Free<strong> </strong>Return</p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "associated_products_kzd3hR": {
+          "type": "associated_products",
+          "settings": {
+            "title": "People Also Like",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "#f5e7ac",
+            "text_color": ""
+          }
+        },
+        "text_dCLbpA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✨If you prefer a <strong>more affordable treadmill</strong> without sacrificing the performance, you can try our <a href=\"https://wellfittreadmill.com/products/tm037-folding-treadmill-with-incline-for-home-use\" target=\"_blank\" title=\"https://wellfittreadmill.com/products/tm037-folding-treadmill-with-incline-for-home-use\"><strong>TM037</strong></a> model;</p>"
+          }
+        },
+        "image_bfqyF3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Charity_1920x250_30d8111f-06ee-436d-953e-98b33571761d.jpg",
+            "heading": "<p>Pay with Ease</p>",
+            "huobi": false,
+            "alignment": "start",
+            "max_width": 150
+          }
+        },
+        "text_QVjpmr": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/donation\" target=\"_blank\" title=\"donation\">Learn more about our donation</a></p>"
+          }
+        },
+        "image_AhPCtP": {
+          "type": "image",
+          "settings": {
+            "heading": "<p>Pay with Ease</p>",
+            "huobi": true,
+            "alignment": "start",
+            "max_width": 190
+          }
+        },
+        "image_QEMXrJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2b88d8bd0a33c8949dc84a5e0a19fe8f.jpg",
+            "heading": "",
+            "huobi": false,
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
+        "mobile_description_XhpaFQ": {
+          "type": "mobile_description",
+          "settings": {
+            "show_product_description": true
+          }
+        },
+        "text_t74r6H": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Presale </strong>☎️<strong>Hotline: +1(281)777-8190</strong></p><p><strong>Calling Open Time: PST 9:00AM-3:00PM(Mon-Fri)</strong></p><p><strong>Contact Email: service@wellfittreadmill.com<br/><br/>1-5Day Fast delivery(</strong>Except Presale Orders)<strong>, shipped from 7 warehouses in California, Georgia, Texas, New Jersey, Houston and, New York</strong></p>"
+          }
+        },
+        "collapsible_text_HTJWiJ": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Main Specs & Dimensions",
+            "content": "<ul><li>Comes Pre-assembled, <strong>no assembly needed</strong></li><li>Running Area Size: <strong>16×41 in</strong></li><li><strong>350 Lbs Capacity</strong></li><li><strong>0-3-10% Manual Incline</strong></li><li>Can Be Stored <strong>Vertically</strong></li><li><strong>Free App</strong> Subscription</li><li>Quiet Brushless Motor, less than <strong>40dB</strong> when working;</li><li>Speed of 0.6-7.6 mph(Adjustable)</li><li><strong>2-Year</strong> Warranty</li><li>Small Office & Home Friendly</li><li>AI Voice Control | Remote Control | 3D VR</li><li>Only Weighs 51.87 Lbs </li><li>Folded Size: 52.9 x 22.9 x 5.25 in</li><li>Expanded Size：47.5x22.9x45 in</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_CAFqxG": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "title": "🎁 Order Early for a Stress-Free Holiday (Christmas Tips)",
+            "content": "<p>Buying early means your gift won’t arrive late — and even if the recipient prefers something else, you’ll still have time to switch to a perfect Plan B.<br/>Ordering now also helps you avoid holiday shipping delays and ensures your treadmill arrives well before Christmas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_LCitMU": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "title": "What is upgraded for the 2025 version?",
+            "content": "<p>The <strong>TM010 Black</strong> model features an upgraded <strong>taller footpad design</strong>, allowing for a <strong>higher 10% incline</strong> to support more intensive workouts. Additionally, its <strong>reinforced structure</strong> increases the <strong>weight capacity from 300 to 350 lbs</strong>, making it more durable and accommodating for a wider range of users. The Motor is also upgraded from 2.5HP to <strong>2.85HP</strong> to offer more stability and safety.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_etCW8W": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "30-Day Risk-Free Return & 2-Year Warranty Support",
+            "content": "<p><a href=\"https://wellfittreadmill.com/pages/refund-policy\" target=\"_blank\" title=\"https://wellfittreadmill.com/pages/refund-policy\"><strong>30-Day Return Window</strong></a><strong>:</strong> Enjoy a simple & <strong>hassle-free return</strong> process — WELLFIT will offer custmers a pre-paid return label when<strong> </strong><a href=\"https://wellfittreadmill.com/pages/refund-policy\" target=\"_blank\" title=\"https://wellfittreadmill.com/pages/refund-policy\"><strong>applicable</strong></a>. Customers don't need to pay for the return shipping.</p><p>How the <strong>2-Year Warranty</strong> Works:</p><ul><li><strong>a)Part Replacement: </strong>Send us a video of the issue, and we'll ship the required parts along with step-by-step video instructions. </li><li><strong>b)Local Repair: </strong>If a local technician is more convenient, you may have the repair done locally with WELLFIT approval. Just send us a video of the issue before repair and a copy of the receipt after-we'll reimburse the cost.</li><li><strong>c)Free Replacement:</strong> If the product cannot be repaired during the warranty period, you will get a free replacement.</li><li><strong>d)Full or Partial Refund: </strong>If repair or replacement isn't feasible or preferred, we may offer a refund based on the product's condition and the issue's severity.</li><li><strong>e)Professional Support:</strong> We provide professional support with a dedicated technical team for online technical assistance.</li></ul><p><strong>*Note:</strong> WELLFIT will evaluate the actual situation and offer our customers best solution.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_WdLUJM": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Tax-Free, No Extra Tax Added At Checkout",
+            "content": "<p>Purchase directly from the WELLFIT treadmill official website and enjoy<strong> tax-free </strong>benefits, as WELLFIT will cover the sales tax. Consumers <strong>do not need to pay the 7%-15% sales tax</strong>.  Compared with buying on other platforms, saving you more.Our official website also honors <strong>2-year</strong> free warranty, while other platform only offer 1-year limited warranty. Strong warranty protection for peace of mind</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_TCr478": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "What's in The Box",
+            "content": "<ul><li>1 x Treadmill</li><li>1 x Remote Control</li><li>1 x User Manual</li><li>1 x Power Cable</li><li>1 x Tool Kit(lubrication oil, wrench, etc)</li><li>1 x Phone Holder</li><li>1 x Safety Key</li><li>1 x Foot Pad Set</li></ul>",
+            "page": ""
+          }
+        },
+        "share_buttons_3aAPHC": {
+          "type": "share_buttons",
+          "settings": {
+            "alignment": "start"
+          }
+        },
+        "gallery_item_VdKxUd": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/006.png",
+            "title": "Max 350 Lbs",
+            "text": "<p>Weight Capacity</p>"
+          }
+        },
+        "gallery_item_NDjF48": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Running_Area.png",
+            "title": "16*41 Inch",
+            "text": "<p>Spacious Running Area</p>"
+          }
+        },
+        "gallery_item_K9D8XG": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/Incline.png",
+            "title": "10% Incline",
+            "text": "<p>0-3-10% Manual Incline</p>"
+          }
+        },
+        "gallery_item_Y86G8t": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/002.png",
+            "title": "0.6-7.6MPH",
+            "text": "<p>Speed Increments of 0.2mph<br/><br/></p>"
+          }
+        },
+        "gallery_item_jKettz": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/003.png",
+            "title": "Foldable",
+            "text": "<p>Space-Saving Storage</p>"
+          }
+        },
+        "gallery_item_xbztD3": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/005.png",
+            "title": "No-Tool Fold",
+            "text": "<p>Pre-Assembled</p>"
+          }
+        },
+        "judge_me_reviews_store_summary_67WTWC": {
+          "type": "shopify://apps/judge-me-reviews/blocks/store_summary/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "data_source": "real",
+            "theme": "expanded",
+            "button_theme_color": "#ffffff",
+            "button_theme_text_color": "#000000",
+            "show_keywords": true,
+            "keywords_visibility": "shown",
+            "show_button": true,
+            "button_visibility": "shown",
+            "alignment": "left",
+            "title_size": "default",
+            "text_size": "default",
+            "corner_styling": "soft",
+            "widget_color": "#f9f9f9",
+            "text_color": "#000000",
+            "lighter_text_color": "#787878",
+            "button_color": "#108474",
+            "button_text_color": "#ffffff",
+            "show_sentiment_colors": false,
+            "max_width": 1100,
+            "heading_text": "Customers rate this store",
+            "button_text": "See AI reviews summary"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "liquid_9X6NrU",
+        "inventory_hBWegP",
+        "klarna_on_site_messaging_app_block_VahHrN",
+        "liquid_8XgkWU",
+        "image_J8jqff",
+        "product_variations_X8xFdE",
+        "product_countdown_ibgA9y",
+        "text_gctmer",
+        "text_r9PEGq",
+        "payment_terms",
+        "separator",
+        "code_xFNJBj",
+        "text_Ue3mQ7",
+        "text_HyH7PE",
+        "description",
+        "quantity_selector",
+        "variant_picker",
+        "text_LzptXQ",
+        "text_9DHzqr",
+        "buy_buttons",
+        "associated_products_kzd3hR",
+        "text_dCLbpA",
+        "image_bfqyF3",
+        "text_QVjpmr",
+        "image_AhPCtP",
+        "image_QEMXrJ",
+        "mobile_description_XhpaFQ",
+        "text_t74r6H",
+        "collapsible_text_HTJWiJ",
+        "collapsible_text_CAFqxG",
+        "collapsible_text_LCitMU",
+        "collapsible_text_etCW8W",
+        "collapsible_text_WdLUJM",
+        "collapsible_text_TCr478",
+        "share_buttons_3aAPHC",
+        "gallery_item_VdKxUd",
+        "gallery_item_NDjF48",
+        "gallery_item_K9D8XG",
+        "gallery_item_Y86G8t",
+        "gallery_item_jKettz",
+        "gallery_item_xbztD3",
+        "judge_me_reviews_store_summary_67WTWC"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "slideshow_VqzjVG": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ratwCY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Treadmill_Valentine_s_Day_Sale_1920x300_970846ad-f4e3-4e5c-b5c8-1271d906d02d.jpg",
+            "mobile_image": "shopify://shop_images/Treadmill_Valentine_s_Day_Sale_1920x600_6c83fa07-24a9-47dd-aaa8-1e1bb8ba421d.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://pages/deals",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_A93QXh": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ratwCY",
+        "image_A93QXh"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "impact_text_Lg37YQ": {
+      "type": "impact-text",
+      "blocks": {
+        "item_tYeYKU": {
+          "type": "item",
+          "settings": {
+            "title": "10% Incline",
+            "subheading": "0-10% Adjustable",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_GrLjtR": {
+          "type": "item",
+          "settings": {
+            "title": "350+LBS",
+            "subheading": "Weight Capacity",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_RtxYWY": {
+          "type": "item",
+          "settings": {
+            "title": "30000+",
+            "subheading": "Happy Customers",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_tYeYKU",
+        "item_GrLjtR",
+        "item_RtxYWY"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.5,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "#f0c417",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "1772529257736703d2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_store_summary_KDaepk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/store_summary/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "data_source": "real",
+            "theme": "expanded",
+            "button_theme_color": "#ffffff",
+            "button_theme_text_color": "#000000",
+            "show_keywords": true,
+            "keywords_visibility": "shown",
+            "show_button": true,
+            "button_visibility": "shown",
+            "alignment": "left",
+            "title_size": "large",
+            "text_size": "default",
+            "corner_styling": "soft",
+            "widget_color": "#f9f9f9",
+            "text_color": "#000000",
+            "lighter_text_color": "#787878",
+            "button_color": "#108474",
+            "button_text_color": "#ffffff",
+            "show_sentiment_colors": false,
+            "max_width": 1100,
+            "heading_text": "Customers rate this store",
+            "button_text": "See AI reviews summary"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_store_summary_KDaepk"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section_revoew_RadY9x": {
+      "type": "section-revoew",
+      "blocks": {
+        "review_CULypr": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner_little_fit.jpg",
+            "video_url": "https://www.youtube.com/watch?v=wk_2luf8qyU",
+            "review_title": "Best Budget Foldable Incline Treadmill With Handrail!",
+            "review_subtitle": "Funny cardio workout with virtual run",
+            "author_avatar": "shopify://shop_images/TM010_blog_profile_little_fit.jpg",
+            "author_name": "LittleFitDevil",
+            "view_count": "16K"
+          }
+        },
+        "review_mEPzXC": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner_Nicole2.jpg",
+            "video_url": "https://youtu.be/shd5bRRKB4Q?si=sj106r4prfR5xbcV",
+            "review_title": "Home Workout Treadmill Makes Morning Productive",
+            "review_subtitle": "Affordable, solid perofomance, at-home fitness",
+            "author_avatar": "shopify://shop_images/TM007_blog_profile_WELLFIT.jpg",
+            "author_name": "WELLFIT Treadmill",
+            "view_count": "5.6K"
+          }
+        },
+        "review_wzmRKA": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner_Allison.jpg",
+            "video_url": "https://www.youtube.com/watch?v=Mg4V73YtRiA",
+            "review_title": "Idealest Treadmill For Weight Loss WELLFIT TM010",
+            "review_subtitle": "350 lbs capacity with 10% incline to burn  calories",
+            "author_avatar": "shopify://shop_images/TM010_blog_profile_Allison.jpg",
+            "author_name": "Shrinking Allison",
+            "view_count": "3.2K"
+          }
+        },
+        "review_aWKiDT": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner.jpg",
+            "video_url": "https://www.youtube.com/watch?v=7yJPOK1tTgA",
+            "review_title": "Best Home Workout Treadmill With Handrail Support",
+            "review_subtitle": "Silent, remote control, wide running area",
+            "author_avatar": "shopify://shop_images/TM010_blog_peofile_Li_Melchert.jpg",
+            "author_name": "Li Melchert",
+            "view_count": "1.4K"
+          }
+        },
+        "review_hieJ7B": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner2.jpg",
+            "video_url": "https://www.youtube.com/watch?v=nxYyzksqrFc",
+            "review_title": "16x41 In Compact Folding Treadmill 10% Incline",
+            "review_subtitle": "Easy to move and store with its compact design",
+            "author_avatar": "shopify://shop_images/SnapInsta.to_455745528_877585607757161_9033685722432420979_n.jpg",
+            "author_name": "homemaker.on.a.budget",
+            "view_count": "1.1K"
+          }
+        },
+        "review_CFXCBd": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_blog_banner_Nicole.jpg",
+            "video_url": "https://www.youtube.com/watch?v=-arQLBaaVf0",
+            "review_title": "2-in-1 Walking Pad/Foldable Treadmill Honest Review",
+            "review_subtitle": "Compact, lightweight and portable",
+            "author_avatar": "shopify://shop_images/TM010_blog_profile_Nicole.jpg",
+            "author_name": "Whitney Nicole",
+            "view_count": "5.6K"
+          }
+        },
+        "review_y7BXiA": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_Mission_Keto_YTB_banner.jpg",
+            "video_url": "https://youtu.be/a-sReJxDxQE?si=Gmaqrm3OKc2p3Rud",
+            "review_title": "This One’s a Keeper – A Truly Flexible Fitness Solution",
+            "review_subtitle": "Feels stable – much better than my last walking pad.",
+            "author_avatar": "shopify://shop_images/TM010_Mission_Keto_profile.jpg",
+            "author_name": "Mission Keto",
+            "view_count": "350"
+          }
+        },
+        "review_6r3gYd": {
+          "type": "review",
+          "settings": {
+            "video_cover_image": "shopify://shop_images/TM010_ytbtu_Ericand_Teresa_banner.jpg",
+            "video_url": "https://youtu.be/zpHBBFW-rTE?si=PAVsw8SCcjVD7VUW",
+            "review_title": "A New Start on My Fitness Journey",
+            "review_subtitle": "Smooth, Quiet, and User-Friendly",
+            "author_avatar": "shopify://shop_images/TM010_ytb_EricandTeresa_profile.jpg",
+            "author_name": "Ericand Teresa",
+            "view_count": "800"
+          }
+        }
+      },
+      "block_order": [
+        "review_CULypr",
+        "review_mEPzXC",
+        "review_wzmRKA",
+        "review_aWKiDT",
+        "review_hieJ7B",
+        "review_CFXCBd",
+        "review_y7BXiA",
+        "review_6r3gYd"
+      ],
+      "name": "Rider Reviews Carousel",
+      "settings": {
+        "title": "Influencer Picks",
+        "subtitle": "See what influencers are saying about our products",
+        "text_alignment": "left",
+        "title_color": "#000000",
+        "subtitle_color": "#666666",
+        "progress_bar_color": "#2aa8e5",
+        "related_videos_text": "More videos"
+      }
+    },
+    "rich_text_CjtaEa": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_63EW6g": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_EkYBjD": {
+          "type": "heading",
+          "settings": {
+            "text": "Easy to Store, Almost Anywhere",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_C9jxBk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>With a folded size of 52.9 x 22.9 x 5.25in , it can be easily placed under your bed, sofa, cabinet, or behind the corner/door.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_63EW6g",
+        "heading_EkYBjD",
+        "richtext_C9jxBk"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_MnwFkw": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_4TWUxH": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "ACCESS TO THOUSANDS OF FREE WORKOUT CLASSES"
+          }
+        },
+        "heading_pPK7p4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "ACCESS TO THOUSANDS OF FREE WORKOUT CLASSES",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_nRVxp7": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<h2><strong>ACCESS TO THOUSANDS OF FREE WORKOUT CLASSES</strong></h2>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4TWUxH",
+        "heading_pPK7p4",
+        "richtext_nRVxp7"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/TM010_Foldable_Treadmill_with_Handle_1348_x_674.jpg",
+        "mobile_image": "shopify://shop_images/TM010_Size-2_750_x_900.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#eaf2ed",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "multi_column_kfHphj": {
+      "type": "multi-column",
+      "blocks": {
+        "item_YDA4UG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/pink_TM010_1600x1600_283e2ed0-7e49-456f-bcc0-58eb1df79740.jpg",
+            "column_size": "3",
+            "title": "@jenna_bariatricbestie(500K+Follower)",
+            "heading_tag": "h6",
+            "content": "<p>The first thing I did to kickstart my fitness journey was incline walk with TM010<br/><br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Ycfj63": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Daine_1600x1600_457dc9b8-fa7e-41eb-a639-4bdef5a5d43b.jpg",
+            "column_size": "3",
+            "title": "@DANIELLE DEBERNARDO(24K Follower)",
+            "heading_tag": "h6",
+            "content": "<p>💪🏼Enpowering moms through home fitness&relatable mom life with TM010<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cHBgb9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Homemakerbudget.jpg",
+            "column_size": "3",
+            "title": "Nutritionist@homemakeronbudget(30W Fan)",
+            "heading_tag": "h6",
+            "content": "<p>This makes it so easy to get in daily steps. It's a must for busy moms<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kaLeYC": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM024-Allison__1600x1600_35bca729-6aab-4364-bd47-1b6a52840c88.jpg",
+            "column_size": "3",
+            "title": "Coach@_finallyallison(278K+ Fans)",
+            "heading_tag": "h6",
+            "content": "<p>Walking is one of the most accessible forms of movement, and WELLFIT TM024 make it happen </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_L8BMTb": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Kley_TM006_1600x1600_3678c71b-4494-4ac7-af4b-83f894e4628a.jpg",
+            "column_size": "3",
+            "title": "@kelseymarie.combs(119K+ Followers)",
+            "heading_tag": "h6",
+            "content": "<p>I used WELLFIT TM006 for Half marathon traing everyday.  I hope my other mother runners&sweet walking friends can enjoy movements in the comfort of their homes</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4TPAfw": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM024-PlusSize_600x600_fdcc08b5-4dac-4b4f-9ae6-8a7de00c8ec3.jpg",
+            "column_size": "3",
+            "title": "@palegingerpear(115K+ Followers)",
+            "heading_tag": "h6",
+            "content": "<p>Treadmill walks aren't just for steps-They are great for mental self-love&motivation. The TM024 is a great pickfor my household as it's wide waking area is great for whom are tall and long strides.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_YDA4UG",
+        "item_Ycfj63",
+        "item_cHBgb9",
+        "item_kaLeYC",
+        "item_L8BMTb",
+        "item_4TPAfw"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Recommended By 100+ Fitness Coaches",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "17395165451fedb395": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_9htCLp": {
+          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup_playlist/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "rl_pl_9848"
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_9htCLp"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section_seiper_AbUbGw": {
+      "type": "Section-seiper",
+      "blocks": {
+        "image_FgiRUk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM012-6_900X1400_a04702d8-cc74-4ec4-88f3-44dadab1c430.jpg",
+            "bg_color": "#f0f0f0",
+            "name": ""
+          }
+        },
+        "image_eaNWeb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-1_900x1400_7aef7de3-1df1-40ac-a5c0-b0701423daad.jpg",
+            "bg_color": "#f0f0f0",
+            "name": ""
+          }
+        },
+        "image_8CgM3Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-Easy_to_lift_900X1400_6108ac83-9d8b-4c66-82a5-1bbb480c9199.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_68qBKD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pink_TM010_900x1400_92a9a585-8981-4ec3-80a2-b7e86f7e1e48.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_F6iBQb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-30_900X1400_cf5a72a1-b364-4d1a-90f4-59d0f5aeb136.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_HGwP8c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Fat_Male_video_banner.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_DgEbLr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-26_900x1400_8cbbb3ce-0ad9-47d5-ade8-06dae73de8ec.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_rFqKkX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-26_900X1400_4.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_niqmFa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-18_900X1400_05e935d1-7824-4b15-93ef-7994a72a72a0.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_drnJqL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-32_900X1400_edf87103-b36b-4d9c-a324-3388ccc99ddb.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_nDAHHG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM012-5_900X1400_b39e12fe-9f40-4cad-b0e7-11ec15b514f1.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_qrjUNW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-23_900X1400_1fa2b799-7c47-45e0-8a06-8b052bf0fa56.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_rmNz7R": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_900X1400_ef99993d-0700-4f39-b740-8c41cec44559.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_bNkfK4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tm010-31_900x1400_1ebf8e7a-cc8e-4dd5-a31e-fb7bf4ddf3b8.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_yMakkb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM012-8_900X1400_bc085c24-d74c-4867-a046-c2b3aeaa4932.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_iHNbAc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-21_900x1400_e4a492a0-7453-4a60-9880-1acff765a31b.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        },
+        "image_wp9VpW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010-26_900X1400_2.jpg",
+            "bg_color": "#f2edff",
+            "name": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FgiRUk",
+        "image_eaNWeb",
+        "image_8CgM3Q",
+        "image_68qBKD",
+        "image_F6iBQb",
+        "image_HGwP8c",
+        "image_DgEbLr",
+        "image_rFqKkX",
+        "image_niqmFa",
+        "image_drnJqL",
+        "image_nDAHHG",
+        "image_qrjUNW",
+        "image_rmNz7R",
+        "image_bNkfK4",
+        "image_yMakkb",
+        "image_iHNbAc",
+        "image_wp9VpW"
+      ],
+      "settings": {
+        "infinte": "30",
+        "heading": "WELLFIT IN MOVE",
+        "text_color": "#f0c417",
+        "subheading": "🏃‍♀️ Unlock the freedom to run anywhere & anytime! ✨ Discover joy in every step on your treadmill journey. No need for a gym membership or traveling to the gym — get in shape right at home!👟 10,000 Steps Have Never Been This Easy! 💪",
+        "subheading_color": "",
+        "background_color": ""
+      }
+    },
+    "product_section_custom_qBtCfw": {
+      "type": "product-section-custom",
+      "blocks": {
+        "tab_mDydWd": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "Senior, Mom Or Rehab"
+          }
+        },
+        "tab_jP93dW": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "Work From Home"
+          }
+        },
+        "tab_TmXPae": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "Home Gym"
+          }
+        },
+        "tab_k9HUbT": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "Office Relaxation"
+          }
+        },
+        "tab_VjDn88": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "5",
+            "tab_label": "Video/Phone Meeting"
+          }
+        },
+        "tab_cKdFz8": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "6",
+            "tab_label": "Pet Exercise"
+          }
+        },
+        "tab_content_wUdCWL": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "1",
+            "title": "",
+            "product_url": "",
+            "description": "Equipped with supportive handrails and smooth, low-impact speed, it's ideal for seniors, moms juggling home life, or anyone focused on recovery.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_senior.jpg"
+          }
+        },
+        "tab_content_QYaM3h": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "2",
+            "title": "",
+            "product_url": "",
+            "description": "Compact and quiet, it fits perfectly under a standing desk when folded — so you can walk while working, stay active, and boost productivity without leaving your home office.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_home_office.jpg"
+          }
+        },
+        "tab_content_W8gcf4": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "3",
+            "title": "",
+            "product_url": "",
+            "description": "With powerful horsepower, incline training, and a spacious running area, it’s built for  cardio, interval runs, and full-body workouts — just like in a commercial gym.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_home_gym.jpg"
+          }
+        },
+        "tab_content_zUP4cj": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "4",
+            "title": "",
+            "product_url": "",
+            "description": "Take a walk during break time. It helps relieve stress, reduce fatigue, and refresh your mind — perfect for long workdays.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_remote_professionals.jpg"
+          }
+        },
+        "tab_content_JGCB6P": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "5",
+            "title": "",
+            "product_url": "",
+            "description": "Ultra-quiet operation ensures zero interruptions. Stay moving during calls or virtual meetings without background noise or distractions.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_video_meeting.jpg"
+          }
+        },
+        "tab_content_H69LCJ": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "6",
+            "title": "",
+            "product_url": "",
+            "description": "Let your furry friend walk beside you! The steady belt and low-speed setting make it a safe and fun way to help pets stay active indoors.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_for_dog.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_mDydWd",
+        "tab_jP93dW",
+        "tab_TmXPae",
+        "tab_k9HUbT",
+        "tab_VjDn88",
+        "tab_cKdFz8",
+        "tab_content_wUdCWL",
+        "tab_content_QYaM3h",
+        "tab_content_W8gcf4",
+        "tab_content_zUP4cj",
+        "tab_content_JGCB6P",
+        "tab_content_H69LCJ"
+      ],
+      "name": "Tabs Section",
+      "settings": {
+        "section_title": "Usage Scenarios"
+      }
+    },
+    "media_grid_kimGRX": {
+      "type": "media-grid",
+      "blocks": {
+        "video_axwGgR": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/TM012-10S-11.6MB(4X5).mp4",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_PzMtBM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Folding_1000x1000_ae8e7eda-40dd-4eb2-a6a3-a1d46af98827.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_TApNfj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Phone_Holder_1000x1000_a31fd4cb-00c9-4ae0-af91-be51f5e2d925.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_H3Gi7f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Motor_1000x1000_5d63cb24-c30e-410b-969d-21950fede4ba.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_gHwjqX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Belt_1000x1000_90f82d43-ec54-4626-befd-6f8dfe501c62.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "video_axwGgR",
+        "image_PzMtBM",
+        "image_TApNfj",
+        "image_H3Gi7f",
+        "image_gHwjqX"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "press_TGNH3x": {
+      "type": "press",
+      "blocks": {
+        "quote_mDxLMd": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Best for someone want to achieve daily step goals while working from home",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_CQKPNn": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "It's compact, portable",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_JzN4rT": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "New experience of working from home",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_mDxLMd",
+        "quote_CQKPNn",
+        "quote_JzN4rT"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "media_with_text_zgkfNr": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_iRTQzP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Indoor_Training_750x500_9b9a8064-5f8a-4ff3-b0eb-042c91dbb319.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Bring Nature Indoors",
+            "content": "<p>Reject boredom when running. Immerse yourself in interactive training scenarios.  Step into a world of realistic, 3D environments that make every run an adventure. Whether you're sprinting through city streets or jogging along scenic trails, the <strong>3D Immersive Experience</strong> transports you to captivating landscapes, enhancing your motivation and making your workouts more enjoyable and engaging.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f2f2f2",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_iRTQzP"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_xitYkW": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_PaqCVg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM010_Voice_Control_750x500_249a4716-6cd5-4923-a003-ffce62136d2f.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "A Movement with Mind",
+            "content": "<p><strong>World's 1st AI empowered </strong>walking pad & treadmill;⚡🏃Your Fitness, Your Way!<strong>Voice control </strong>adds a new level of intelligence and interactivity.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PaqCVg"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_qyJzVH": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_JBXQtM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM012_smart_treadmill_with_10_incline2.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Maxmize Burn with 10% Adjustable Incline",
+            "content": "<p>With removable footed pad to simulate uphill running, provides more effective exercise than flat exercise and in less time</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JBXQtM"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "product_section_custom_ppiPWq": {
+      "type": "product-section-custom",
+      "blocks": {
+        "tab_PpPDf4": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "4-in-1 Versatile Modes"
+          }
+        },
+        "tab_NeT77x": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "Knee Protection"
+          }
+        },
+        "tab_FAUANq": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "Multiple Control Ways"
+          }
+        },
+        "tab_4DERze": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "Spacious Running Area"
+          }
+        },
+        "tab_gArFeA": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "5",
+            "tab_label": "Real-Time Data Display"
+          }
+        },
+        "tab_HfJcXY": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "6",
+            "tab_label": "Transport Wheels"
+          }
+        },
+        "tab_content_jmnfcB": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "1",
+            "title": "4-in-1 Treadmill with 10% Incline",
+            "product_url": "",
+            "description": "Walk, jog, or run with adjustable speeds. Fold the handle for under-desk use. Quiet motor with mute mode—perfect for work or shared spaces.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_with_4_modes.jpg"
+          }
+        },
+        "tab_content_KT9mMY": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "2",
+            "title": "5-Layer Joint-friendly Running Belt",
+            "product_url": "",
+            "description": "Shock-absorbing, durable, and anti-static. Five layers of careful design will help you regain your motility and engage in mild exercise. With a comfy foot, you'll feel as if you're walking on a plastic track, and your knees will never squeak.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_with_shock_absorption.jpg"
+          }
+        },
+        "tab_content_acDTGC": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "3",
+            "title": "Multi Ways to Control",
+            "product_url": "",
+            "description": "Offers various control options, including handle button controls, remote, voice and mobile app for a customizable workout experience.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_with_multiple_controls.jpg"
+          }
+        },
+        "tab_content_yLfkBx": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "4",
+            "title": "Spacious Running Area",
+            "product_url": "",
+            "description": "Has enough room(16x41inches) to run, walk or jog. Whatever your pace, you can safely stride it out.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_with_spacious_belt.jpg"
+          }
+        },
+        "tab_content_Qrgxj4": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "5",
+            "title": "Real-time Data Display",
+            "product_url": "",
+            "description": "Stay informed and motivated with the LED Display. This clear, vibrant screen shows essential workout metrics such as speed, distance, time, and calories burned, allowing you to track your progress at a glance.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_treadmill_with_data_tracking.jpg"
+          }
+        },
+        "tab_content_aPimWB": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "6",
+            "title": "Easy to Move",
+            "product_url": "",
+            "description": "Equipped with transport wheels, this treadmill can be effortlessly relocated and stored, making it perfect for flexible home use. Whether you're rearranging your space or storing the treadmill after a workout, the lightweight and mobile design ensures hassle-free movement.",
+            "show_price": true,
+            "regular_price": "",
+            "sale_price": "",
+            "discount_percentage": "",
+            "button_text": "",
+            "button_url": "",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM010_folding_treadmill_with_transport_wheels.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_PpPDf4",
+        "tab_NeT77x",
+        "tab_FAUANq",
+        "tab_4DERze",
+        "tab_gArFeA",
+        "tab_HfJcXY",
+        "tab_content_jmnfcB",
+        "tab_content_KT9mMY",
+        "tab_content_acDTGC",
+        "tab_content_yLfkBx",
+        "tab_content_Qrgxj4",
+        "tab_content_aPimWB"
+      ],
+      "name": "Tabs Section",
+      "settings": {
+        "section_title": "Key Features"
+      }
+    },
+    "media_with_text_qW8Ryg": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_fegETr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WFTM012-10.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Gym-Quality Home Exercise Experience",
+            "title": "So Much More In The APP",
+            "content": "<p>Take your fitness journey to the next level with WELLFIT/Zwift/Kinomap/Apple Health App. Get training plans, track your progress, and stay motivated with real-time feedback and analytics. Run your way to success, wherever you are! Engaging scenic videos for <strong>immersive </strong>Home Workouts. Eliminate the boredom of exercise! Discover the joy of sports games!</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_fegETr"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "image_with_text_overlay_XMnyw8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_hNXxCP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_iNgpWw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_gVnFb3": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_hNXxCP",
+        "heading_iNgpWw",
+        "richtext_gVnFb3"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/TM010_Size_1348x674_dfa95c6a-b2da-4a31-a522-95003b0983b4.jpg",
+        "mobile_image": "shopify://shop_images/TM010_Package_750_x_779.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "specification_table_6LQr9b": {
+      "type": "specification-table",
+      "blocks": {
+        "row_zgzefP": {
+          "type": "row",
+          "settings": {
+            "heading": "Horsepower",
+            "value": "<p>2.85HP</p>"
+          }
+        },
+        "row_nLMKB7": {
+          "type": "row",
+          "settings": {
+            "heading": "Speed",
+            "value": "<p>0.6-7.6mph</p>"
+          }
+        },
+        "row_9DKgEW": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "heading": "Running Area",
+            "value": "<p>16 x40\"</p>"
+          }
+        },
+        "row_Q68w4H": {
+          "type": "row",
+          "settings": {
+            "heading": "Expanded Size",
+            "value": "<p>47.5x22.9x45 in</p>"
+          }
+        },
+        "row_9mrjz8": {
+          "type": "row",
+          "settings": {
+            "heading": "Folded Size",
+            "value": "<p>52.9 x 22.9 x 5.25 in</p>"
+          }
+        },
+        "row_Hnz478": {
+          "type": "row",
+          "settings": {
+            "heading": "Assembly",
+            "value": "<p>No assembly required, ready to use out of the box</p>"
+          }
+        },
+        "row_K7YDKH": {
+          "type": "row",
+          "settings": {
+            "heading": "Max Load",
+            "value": "<p>350Lbs</p>"
+          }
+        },
+        "row_QMixrJ": {
+          "type": "row",
+          "settings": {
+            "heading": "Portability",
+            "value": "<p>Built-in wheels for easy movement</p>"
+          }
+        },
+        "row_4bH9hR": {
+          "type": "row",
+          "settings": {
+            "heading": "Incline",
+            "value": "<p>10% Manual Incline</p>"
+          }
+        },
+        "row_jJR3UF": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "heading": "Material",
+            "value": "<p>‎Silicone</p>"
+          }
+        },
+        "row_g6RiyL": {
+          "type": "row",
+          "settings": {
+            "heading": "Package Size",
+            "value": "<p>53.5x25x6 in</p>"
+          }
+        },
+        "row_yPprHW": {
+          "type": "row",
+          "settings": {
+            "heading": "Product Weight",
+            "value": "<p>51.87LBS</p>"
+          }
+        },
+        "row_WLTr8q": {
+          "type": "row",
+          "settings": {
+            "heading": "Power Supply",
+            "value": "<p>110-120V, 60Hz</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_zgzefP",
+        "row_nLMKB7",
+        "row_9DKgEW",
+        "row_Q68w4H",
+        "row_9mrjz8",
+        "row_Hnz478",
+        "row_K7YDKH",
+        "row_QMixrJ",
+        "row_4bH9hR",
+        "row_jJR3UF",
+        "row_g6RiyL",
+        "row_yPprHW",
+        "row_WLTr8q"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Spec&Size",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "accordion_content_k7PhRH": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_xByMc4": {
+          "type": "item",
+          "settings": {
+            "title": "Can it be used on carpet/wood/tile?",
+            "content": "<p>Yes, it can be used on carpet/wood/tile. <a href=\"https://wellfittreadmill.com/?reel-id=246243&l-view=default_view\" target=\"_blank\" title=\"https://wellfittreadmill.com/?reel-id=246243&l-view=default_view\"><strong>Watch Video</strong></a></p>"
+          }
+        },
+        "item_w8de94": {
+          "type": "item",
+          "settings": {
+            "title": "Does it have smart features?",
+            "content": "<p>All of our treadmills connect to the <strong>WELLFIT App (free to use)</strong>, where you can track your workout data, set training plans, and even control the treadmill directly from your phone — including <strong>voice control</strong>.</p><p>You can also enjoy <strong>first-person scenic running</strong> through the app for a more immersive workout experience.</p><p>In addition, the treadmill syncs with <strong>Apple Health</strong> and supports <strong>Kinomap</strong> and <strong>Zwift</strong> for interactive training.</p><p>For safety, it includes a <strong>safety key</strong> — when detached, the machine stops immediately to prevent injury. The overall performance is also designed to run <strong>quietly</strong>, making it suitable for home use.</p>"
+          }
+        },
+        "item_NEY3XQ": {
+          "type": "item",
+          "settings": {
+            "title": "Can this treadmill be stored upright?",
+            "content": "<p>Yes, it can be stored upright when not in use.</p>"
+          }
+        },
+        "item_xyVnaT": {
+          "type": "item",
+          "settings": {
+            "title": "Does it come with a remote control?",
+            "content": "<p>Yes, it comes with a Bluetooth-connected remote. With the smart feature, you can also control the device using the App.</p>"
+          }
+        },
+        "item_XMCFpL": {
+          "type": "item",
+          "settings": {
+            "title": "Am I able to replace my remote for my walking pad?",
+            "content": "<p>For sure, we can send a replacement remote control to you if yours broke. Or you can directly buy from us.</p>"
+          }
+        },
+        "item_cWmTQh": {
+          "type": "item",
+          "settings": {
+            "title": "Does it have any incline level? Automatic or Manual?",
+            "content": "<p>Yes, 0-3-10% manual incline.</p>"
+          }
+        },
+        "item_3969iU": {
+          "type": "item",
+          "settings": {
+            "title": "Is it foldable for easy storage?",
+            "content": "<p>Yes, It's foldable and easy to store.</p>"
+          }
+        },
+        "item_TCzE4d": {
+          "type": "item",
+          "settings": {
+            "title": "How quiet is it?",
+            "content": "<p>Less than 40dB when working, just like whispering, super quiet. </p>"
+          }
+        },
+        "item_pAGjUA": {
+          "type": "item",
+          "settings": {
+            "title": "Can it still work when it is folded?",
+            "content": "<p>Yes, it can still be used as a walking pad when you fold it. </p>"
+          }
+        },
+        "item_txXMxz": {
+          "type": "item",
+          "settings": {
+            "title": "When my order ship and by which carrier",
+            "content": "<p>Your order will be delivered to your provided address within 1-5 working days. We use major shipping carriers such as FedEx Ground, UPS, and DHL for our deliveries.</p>"
+          }
+        },
+        "item_dqUcmL": {
+          "type": "item",
+          "settings": {
+            "title": "What is the speed range of the product? Can I run as well as walk?",
+            "content": "<p>0.6-7.6MPH; It's designed for walking, jogging or running by adjusting the speed.</p>"
+          }
+        },
+        "item_gnUmWG": {
+          "type": "item",
+          "settings": {
+            "title": "Does the order need to pay for shipping & Tax?",
+            "content": "<p>All orders are free shipping and tax-free</p>"
+          }
+        },
+        "item_HbHK9W": {
+          "type": "item",
+          "settings": {
+            "title": "Do your items have a product warranty?",
+            "content": "<p>We offer a 2-year free warranty; For details, please check the warranty policy page.</p>"
+          }
+        },
+        "item_icLkgK": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship to Puerto Rico or outside the United States?",
+            "content": "<p>No, we only ship within the contiguous US 48 states, excluding Alaska, Hawaii, Puerto Rico....and also excluding any PO BOXES (sorry, but we can't ship our items to any PO BOX, period).</p>"
+          }
+        },
+        "item_HWLHba": {
+          "type": "item",
+          "settings": {
+            "title": "Does it require assembly?",
+            "content": "<p>It does not need to be assembled, and can be used after opening.</p>"
+          }
+        },
+        "item_eJ7AUR": {
+          "type": "item",
+          "settings": {
+            "title": "Where can I find the user manual for the product?",
+            "content": "<p>The paper instruction manual is attached to the product packaging box, you can also contact our service support to get the PDF/word manual.</p>"
+          }
+        },
+        "item_Q9NdJG": {
+          "type": "item",
+          "settings": {
+            "title": "What safety features does it have?",
+            "content": "<p>We have safety lock on the treadmill,When the user falls, the clip detaches from the key, causing the belt to stop automatically.</p>"
+          }
+        },
+        "item_jGpDry": {
+          "type": "item",
+          "settings": {
+            "title": "How can I contact you if my questions are not listed here?",
+            "content": "<p>You can contact us by livechat, email to <a href=\"mailto:service@wellfittreadmill.com\" title=\"mailto:service@wellfittreadmill.com\">service@wellfittreadmill.com</a> or make a phone call to +1 (281) 777-8190</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_xByMc4",
+        "item_w8de94",
+        "item_NEY3XQ",
+        "item_xyVnaT",
+        "item_XMCFpL",
+        "item_cWmTQh",
+        "item_3969iU",
+        "item_TCzE4d",
+        "item_pAGjUA",
+        "item_txXMxz",
+        "item_dqUcmL",
+        "item_gnUmWG",
+        "item_HbHK9W",
+        "item_icLkgK",
+        "item_HWLHba",
+        "item_eJ7AUR",
+        "item_Q9NdJG",
+        "item_jGpDry"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQs",
+        "content": "<p>Have a question about an order or your walking pad & treadmill？We have compiled resources to help you find the answers you need.<br/>Unable to find what you're looking for？Contact us via</p><p>Email: <a href=\"mailto:support@tstebike.com\" target=\"_blank\" title=\"mailto:support@tstebike.com\">service@wellfittreadmill.com</a></p><p>Phone: +1 (281) 777-8190</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "comparison_table_pQiKXq": {
+      "type": "comparison-table",
+      "blocks": {
+        "headings_FeY8jA": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Incline",
+            "heading_2": "Speed",
+            "heading_3": "With Handle",
+            "heading_4": "Compatible App",
+            "heading_5": "Sync Apple Health",
+            "heading_6": "AI Voice Control",
+            "heading_7": "Running Area",
+            "heading_8": "Horsepower",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_MYFRHg": {
+          "type": "values",
+          "settings": {
+            "product": "wellfit-tm010-2-in-1-folding-incline-treadmill",
+            "value_1": "<p>0-10%</p>",
+            "value_2": "<p>0.6-7.6mph</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_PTPKJ8": {
+          "type": "values",
+          "settings": {
+            "product": "tm007",
+            "value_1": "<p>0-15% Auto</p>",
+            "value_2": "<p>0.6-8.7mph</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_48xmAF": {
+          "type": "values",
+          "settings": {
+            "product": "tm030-treadmill",
+            "value_1": "<p>0-10%</p>",
+            "value_2": "<p>1.0-5.0mph</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_FeY8jA",
+        "values_MYFRHg",
+        "values_PTPKJ8",
+        "values_48xmAF"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Product comparison",
+        "content": "<p>Choose the one best for you!</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "show_product_info": true,
+        "show_product_swatch": true,
+        "viewing_product": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "tm037-folding-treadmill-with-incline-for-home-use",
+          "tm015",
+          "tm030-treadmill",
+          "tm034-folding-treadmill-with-incline",
+          "wellfit-tm002-walking-pad-treadmills-with-handle",
+          "tm029-pro-treadmill",
+          "wellfit-tm007-foldable-auto-incline-treadmill"
+        ],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "17725880550ae9484c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_store_summary_phw9JD": {
+          "type": "shopify://apps/judge-me-reviews/blocks/store_summary/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "data_source": "real",
+            "theme": "expanded",
+            "button_theme_color": "#ffffff",
+            "button_theme_text_color": "#000000",
+            "show_keywords": true,
+            "keywords_visibility": "shown",
+            "show_button": true,
+            "button_visibility": "shown",
+            "alignment": "left",
+            "title_size": "default",
+            "text_size": "default",
+            "corner_styling": "soft",
+            "widget_color": "#f9f9f9",
+            "text_color": "#000000",
+            "lighter_text_color": "#787878",
+            "button_color": "#108474",
+            "button_text_color": "#ffffff",
+            "show_sentiment_colors": false,
+            "max_width": 1100,
+            "heading_text": "Customers rate this store",
+            "button_text": "See AI reviews summary"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_store_summary_phw9JD"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1718955843b44b6ff3": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_zDGN6K": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_zDGN6K"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_VqzjVG",
+    "impact_text_Lg37YQ",
+    "1772529257736703d2",
+    "section_revoew_RadY9x",
+    "rich_text_CjtaEa",
+    "image_with_text_overlay_MnwFkw",
+    "multi_column_kfHphj",
+    "17395165451fedb395",
+    "section_seiper_AbUbGw",
+    "product_section_custom_qBtCfw",
+    "media_grid_kimGRX",
+    "press_TGNH3x",
+    "media_with_text_zgkfNr",
+    "media_with_text_xitYkW",
+    "media_with_text_qyJzVH",
+    "product_section_custom_ppiPWq",
+    "media_with_text_qW8Ryg",
+    "image_with_text_overlay_XMnyw8",
+    "specification_table_6LQr9b",
+    "accordion_content_k7PhRH",
+    "comparison_table_pQiKXq",
+    "related-products",
+    "17725880550ae9484c",
+    "1718955843b44b6ff3"
+  ]
+}

@@ -1,0 +1,2818 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_EiVWng": {
+      "type": "slideshow",
+      "blocks": {
+        "image_my6Aja": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/WF_Christmas_Sale_Banner_1920x800_no_button_550_off.jpg",
+            "mobile_image": "shopify://shop_images/WF_Christmas_Sale_Banner_1080x1350_no_button_550_off.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_FCb63Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WF_4th_Annual_Sale_640_OFF_1920x800_no_button.jpg",
+            "mobile_image": "shopify://shop_images/WF_4th_Annual_Sale_640_OFF_1080x1350_no_button.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_Lkda34": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WF_4th_Annual_Sale_640_OFF_Scene_1920x800_no_button.jpg",
+            "mobile_image": "shopify://shop_images/WF_4th_Annual_Sale_640_OFF_Scene_1080X1350_no_button.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_my6Aja",
+        "image_FCb63Q",
+        "image_Lkda34"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "specification_table_AU7U8D": {
+      "type": "specification-table",
+      "blocks": {
+        "row_NjwVit": {
+          "type": "row",
+          "settings": {
+            "heading": "Discount&Valid Time",
+            "value": "<p><strong>Save Up to $450 </strong>⏰<strong>02.20 - 03.20</strong></p>"
+          }
+        },
+        "row_C4RTrb": {
+          "type": "row",
+          "settings": {
+            "heading": "Financing",
+            "value": "<p><strong>0% APR Klarna&Afterpay payment installments available</strong></p>"
+          }
+        },
+        "row_RCx3jb": {
+          "type": "row",
+          "settings": {
+            "heading": "30-Day Price Guarantee",
+            "value": ""
+          }
+        },
+        "row_XYhy9z": {
+          "type": "row",
+          "settings": {
+            "heading": "Call US",
+            "value": "<p><strong>Presale</strong>☎️<strong>Hotline: +1(281)777-8190</strong></p>"
+          }
+        },
+        "row_KXeMHK": {
+          "type": "row",
+          "settings": {
+            "heading": "Delivery",
+            "value": "<p><strong>🚚Estimated Delivery 1-5 day</strong></p>"
+          }
+        },
+        "row_NRmNfz": {
+          "type": "row",
+          "settings": {
+            "heading": "Safe",
+            "value": "<p>✅<strong>30-Day Hassle-free Returns</strong></p>"
+          }
+        },
+        "row_kdqMA6": {
+          "type": "row",
+          "settings": {
+            "heading": "Warranty",
+            "value": "<p><strong>2-3 Year Free Warranty</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_NjwVit",
+        "row_C4RTrb",
+        "row_RCx3jb",
+        "row_XYhy9z",
+        "row_KXeMHK",
+        "row_NRmNfz",
+        "row_kdqMA6"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "🎉Health-Care Month Sale Up To 💰 $450 OFF!",
+        "content": "<p>Spring is here, and it's the perfect time to focus on your health and well-being! 🌿💪 Celebrate Health-care Month with our exclusive sale—save up to $450 now! 🎉 <strong>Empower your stride and embrace your strength</strong> as you take steps toward a healthier, more active lifestyle. 🚶‍♀️🏃‍♂️✨ Order today and celebrate wellness with every move you make!</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#1a1a1a",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "hot_spots_RfkWap": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_wdYneK": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 38,
+            "vertical_position": 39,
+            "horizontal_position_mobile": 48,
+            "vertical_position_mobile": 20,
+            "icon_width": 32,
+            "title": "Exercise anytime, anywhere",
+            "content": "<p>It takes up little space, and you can place a table on top to use your laptop, so you can exercise without any restrictions.</p>"
+          }
+        },
+        "item_NqNweg": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 58,
+            "vertical_position": 40,
+            "horizontal_position_mobile": 40,
+            "vertical_position_mobile": 64,
+            "icon_width": 32,
+            "title": "Safety protection",
+            "content": "<p>The treadmill is equipped with a safety rope, which needs to be clipped to your clothes during exercise. When the safety rope falls off, the treadmill will stop running to prevent you from getting hurt.</p>"
+          }
+        },
+        "item_4dtT33": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 74,
+            "vertical_position": 79,
+            "horizontal_position_mobile": 65,
+            "vertical_position_mobile": 91,
+            "icon_width": 32,
+            "title": "Low noise(less than 40dB), wide running belt and excellent load-bearing capacity",
+            "content": "<p>The brushless motor has very low noise, and the load-bearing capacity of the running belt is over 320LBS.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_wdYneK",
+        "item_NqNweg",
+        "item_4dtT33"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/6_297705dd-ce51-4779-976f-679026dcb8cf.jpg",
+        "mobile_image": "shopify://shop_images/6-1_9ab17d6b-7cd8-4f4f-89bc-167ea622a17b.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "impact_text_CeJxHX": {
+      "type": "impact-text",
+      "blocks": {
+        "item_EPBbXb": {
+          "type": "item",
+          "settings": {
+            "title": "1- 3 Years",
+            "subheading": "Warranty Promise",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_k7eEVz": {
+          "type": "item",
+          "settings": {
+            "title": "Free Shipping",
+            "subheading": "Tax-Free Benefits",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_DU6fhQ": {
+          "type": "item",
+          "settings": {
+            "title": "30-Day Return",
+            "subheading": "Hassle-Free Return",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_EPBbXb",
+        "item_k7eEVz",
+        "item_DU6fhQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 0.5,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "heading_text_color": "#00a341",
+        "heading_gradient": "",
+        "text_color": "#f83a3a",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "slideshow_fbywyx": {
+      "type": "slideshow",
+      "blocks": {
+        "image_YkREpa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM037_WF_Annual_Sale_149_1920x800_7fc4e59f-8bb5-48eb-8f79-85dda44fbc51.jpg",
+            "mobile_image": "shopify://shop_images/TM037_WF_Annual_Sale_149_1920x1067_bce01d1a-ecfe-4549-be7a-033816b76ad9.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_KC9fNd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM007_spring_sale_419_1920x800_950e80fe-0585-42b1-b2e2-d9e0e913684d.jpg",
+            "mobile_image": "shopify://shop_images/TM007_spring_sale_419_1920x1244_67f87e3a-f0a8-4d3a-aacd-1644fc72f6cc.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm007",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_YkREpa",
+        "image_KC9fNd"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "slideshow_CVCnEz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iVMDwi": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM007_wellfit_treadmill_spring_sale_1920x800_409.jpg",
+            "mobile_image": "shopify://shop_images/TM007_wellfit_treadmill_spring_sale_1920x1244_409.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm007",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_CWzHfA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM029_Memorial_Day_Sale_banner_550_OFF_1920x800_2dd475f7-60ce-4ac6-a792-5977d4191da7.jpg",
+            "mobile_image": "shopify://shop_images/TM029_Memorial_Day_Sale_banner_550_OFF_800x632_0321b648-9bef-4b73-b004-be5c0809440a.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_iVMDwi",
+        "image_CWzHfA"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "slideshow_eRJBCE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_YgKcCF": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM007_wellfit_treadmill_spring_sale_1920x800_409.jpg",
+            "mobile_image": "shopify://shop_images/TM007_wellfit_treadmill_spring_sale_1920x1244_409.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm007",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_xxyNXt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM029_WF_Annual_Sale_749_1920x800_right.jpg",
+            "mobile_image": "shopify://shop_images/TM029_WF_Annual_Sale_749_1920x1067_right.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_YgKcCF",
+        "image_xxyNXt"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "slideshow_7pmjWM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_GKRzRB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM007_WF_Annual_Sale_429_1920x800_left.jpg",
+            "mobile_image": "shopify://shop_images/TM007_WF_Annual_Sale_429_1920x1067_left.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm007",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_eWNtLh": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM029_spring_sale_749_1920x800_1.jpg",
+            "mobile_image": "shopify://shop_images/TM029_spring_sale_749_1920x1160_1.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GKRzRB",
+        "image_eWNtLh"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "slideshow_3geeYk": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FYY9Jc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM007_Memorial_Day_Sale_banner_370_OFF_1920x800_be63a8c9-fc5e-4f26-b3d3-58159ef0c6bc.jpg",
+            "mobile_image": "shopify://shop_images/TM007_Memorial_Day_Sale_banner_370_OFF_800x632_392b1fce-a2cc-484c-b273-71c5d9ec5ed3.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm007",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_Vf3Y4M": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/TM029_spring_sale_749_1920x800_1.jpg",
+            "mobile_image": "shopify://shop_images/TM029_spring_sale_749_1920x1160_1.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FYY9Jc",
+        "image_Vf3Y4M"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "product_section_custom_Kdb4V7": {
+      "type": "product-section-custom",
+      "blocks": {
+        "tab_Ceh8Gn": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "TM037"
+          }
+        },
+        "tab_V4PD94": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM029"
+          }
+        },
+        "tab_4UzYGg": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "TM015"
+          }
+        },
+        "tab_G9PGXU": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_4dxHH4": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM015"
+          }
+        },
+        "tab_e6Mehj": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "TM030"
+          }
+        },
+        "tab_PLH6Ay": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_XdgxME": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM007"
+          }
+        },
+        "tab_crcYbk": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM033"
+          }
+        },
+        "tab_content_zyWgCh": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "title": "20 Inch Wide Running Area",
+            "product_url": "shopify://products/tm024-folding-treadmill",
+            "description": "Heavy-Duty Treadmill-450LBS Capacity-9.9mph",
+            "show_price": true,
+            "regular_price": "$1049",
+            "sale_price": "$499",
+            "discount_percentage": "55",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm024-folding-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM024_ny_sale_550_off.jpg"
+          }
+        },
+        "tab_content_mhewXX": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "1",
+            "title": "Best-Budget New Arrival",
+            "product_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "description": "Folding Treadmill With Incline & Quiet Performance",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$149",
+            "discount_percentage": "62",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM037_WF_4th_Annual_Sale_250_OFF_1276x914_d6a49481-9607-468a-b872-52b0dc82df24.jpg"
+          }
+        },
+        "tab_content_yFjrq3": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "2",
+            "title": "55 Inch Long Running Area",
+            "product_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "description": "Treadmill With 12% Auto Incline-500LBS Capacity 20 In Wide Deck",
+            "show_price": true,
+            "regular_price": "$1299",
+            "sale_price": "$749",
+            "discount_percentage": "42",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM029_WF_4th_Annual_Sale_550_OFF_1276x914_297e6232-858e-48b2-ad77-ec6958dcd223.jpg"
+          }
+        },
+        "tab_content_3KM8fg": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "3",
+            "title": "With Side Rails",
+            "product_url": "shopify://products/tm015",
+            "description": "350 LBS Capacity Incline Treadmill",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$239",
+            "discount_percentage": "52",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm015",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM015_WF_4th_Annual_Sale_260_OFF_1276x914_51a2317b-de14-4916-a1ac-4851280eecc7.jpg"
+          }
+        },
+        "tab_content_g7FBnf": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "4",
+            "title": "Auto Incline Treadmill For Weight Loss",
+            "product_url": "shopify://products/tm007",
+            "description": "Foldable Treadmill With 15% Auto Incline & Side Handrail",
+            "show_price": true,
+            "regular_price": "$799",
+            "sale_price": "$429",
+            "discount_percentage": "48",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm007",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM007_WF_4th_Annual_Sale_370_OFF_1276x914_157302eb-1b21-4691-8c21-9c8ce8f59ce1.jpg"
+          }
+        },
+        "tab_content_wPayim": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "With Side Handrails & Handlebar",
+            "product_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "description": "Foldable Treadmill With Side Handrail and 10% Auto Incline",
+            "show_price": true,
+            "regular_price": "$599",
+            "sale_price": "$359",
+            "discount_percentage": "40",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM032_easter_sale_240_off_1276x914_32e621b2-46b8-40b4-9aa0-fe2efe2bb0af.jpg"
+          }
+        },
+        "tab_content_Yx8hrJ": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "title": "Walking Pad With Auto Incline",
+            "product_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "description": "Compact Walking Pad With 10% Auto Incline  330 Lbs Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$189",
+            "discount_percentage": "62",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/WP017_spring_sale_189_1276x914_51f4e610-da23-404a-baa2-86697f8f7e9a.jpg"
+          }
+        },
+        "tab_content_kcAErP": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "title": "With Handlebar & Side Rails",
+            "product_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "description": "Foldable Treadmill 10% Auto Incline",
+            "show_price": true,
+            "regular_price": "$599",
+            "sale_price": "$359",
+            "discount_percentage": "40",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM032_BF_Sale_240_off_60day.jpg"
+          }
+        },
+        "tab_content_HegVbq": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "title": "Quiet Treadmill With Removable Handrail",
+            "product_url": "shopify://products/tm030-treadmill",
+            "description": "Affordable Treadmill With 10% Incline & Mute Mode",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$159",
+            "discount_percentage": "60",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm030-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM030_ny_sale_240_off.jpg"
+          }
+        },
+        "tab_content_akdLxM": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "44 Inch Long Running Area",
+            "product_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "description": "2025 Upgraded Treadmills With 10% Incline & 360 LBS Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$259",
+            "discount_percentage": "50",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM002_ny_sale_240_off.jpg"
+          }
+        },
+        "tab_content_BwCf3m": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "With Desk & Big LCD Screen",
+            "product_url": "shopify://products/tm033-heavy-duty-auto-incline-treadmill-with-screen",
+            "description": "Heavy Duty Treadmill With 12% Auto Incline-420LBS Capacity",
+            "show_price": true,
+            "regular_price": "$999",
+            "sale_price": "$599",
+            "discount_percentage": "40",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm033-heavy-duty-auto-incline-treadmill-with-screen",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM033_BF_Sale_400_off_60day.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_Ceh8Gn",
+        "tab_V4PD94",
+        "tab_4UzYGg",
+        "tab_G9PGXU",
+        "tab_4dxHH4",
+        "tab_e6Mehj",
+        "tab_PLH6Ay",
+        "tab_XdgxME",
+        "tab_crcYbk",
+        "tab_content_zyWgCh",
+        "tab_content_mhewXX",
+        "tab_content_yFjrq3",
+        "tab_content_3KM8fg",
+        "tab_content_g7FBnf",
+        "tab_content_wPayim",
+        "tab_content_Yx8hrJ",
+        "tab_content_kcAErP",
+        "tab_content_HegVbq",
+        "tab_content_akdLxM",
+        "tab_content_BwCf3m"
+      ],
+      "settings": {
+        "section_title": "Top Rated Treadmills"
+      }
+    },
+    "product_section_custom_96Uce6": {
+      "type": "product-section-custom",
+      "blocks": {
+        "tab_zXYGGD": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "TM029"
+          }
+        },
+        "tab_wr8YRX": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM034"
+          }
+        },
+        "tab_BdrpEc": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "WP017"
+          }
+        },
+        "tab_kqxHG4": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM034"
+          }
+        },
+        "tab_LNVaj7": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM007"
+          }
+        },
+        "tab_dX79Vp": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "TM037"
+          }
+        },
+        "tab_3riLcb": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_Cbgq69": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM002"
+          }
+        },
+        "tab_BLYAXN": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_content_LGWw7n": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "1",
+            "title": "55 Inch Long Running Area",
+            "product_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "description": "Treadmill With 12% Auto Incline-500LBS Capacity 20 In Wide Deck",
+            "show_price": true,
+            "regular_price": "$1299",
+            "sale_price": "$749",
+            "discount_percentage": "42",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM029_WF_4th_Annual_Sale_550_OFF_1276x914_297e6232-858e-48b2-ad77-ec6958dcd223.jpg"
+          }
+        },
+        "tab_content_dGpHiY": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "2",
+            "title": "Auto Incline Treadmill For Weight Loss",
+            "product_url": "shopify://products/tm007",
+            "description": "Foldable Treadmill With 15% Auto Incline & Side Handrail",
+            "show_price": true,
+            "regular_price": "$799",
+            "sale_price": "$429",
+            "discount_percentage": "48",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm007",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM007_WF_4th_Annual_Sale_370_OFF_1276x914_157302eb-1b21-4691-8c21-9c8ce8f59ce1.jpg"
+          }
+        },
+        "tab_content_BJMJLG": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "title": "Good For 4'2\" to 6'5\" Tall",
+            "product_url": "shopify://products/tm007",
+            "description": "Height-Adjustable Handrail Foldable Treadmill With 15% Auto Incline",
+            "show_price": true,
+            "regular_price": "$899",
+            "sale_price": "$429",
+            "discount_percentage": "52",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm007",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM007_BF_Sale_470_off_60day.jpg"
+          }
+        },
+        "tab_content_qUxb3g": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "title": "Quiet Fold-Flat Treadmill With 10% Incline",
+            "product_url": "shopify://products/walking-pad-treadmill-with-incline",
+            "description": "Compact Foldable Treadmill With Remote Control",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$189",
+            "discount_percentage": "52",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/walking-pad-treadmill-with-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM034_Pink_super_bowl_sale_210_OFF.jpg"
+          }
+        },
+        "tab_content_6pdrQX": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "title": "Walking Pad With Auto Incline",
+            "product_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "description": "Compact Walking Pad With 10% Auto Incline  330 Lbs Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$189",
+            "discount_percentage": "62",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/WP017_ny_sale_310_OFF.jpg"
+          }
+        },
+        "tab_content_a9aTqC": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "title": "55 Inch Long Running Area",
+            "product_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "description": "Treadmill With 12% Auto Incline-500LBS Capacity 20 In Wide Deck",
+            "show_price": true,
+            "regular_price": "$1299",
+            "sale_price": "$729",
+            "discount_percentage": "43",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm029-auto-incline-folding-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM029_BF_Sale_570_off_60day.jpg"
+          }
+        },
+        "tab_content_W87RKe": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "3",
+            "title": "Best-Budget New Arrival",
+            "product_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "description": "Folding Treadmill With Incline & Quiet Performance",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$149",
+            "discount_percentage": "62",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM037_WF_4th_Annual_Sale_250_OFF_1276x914_d6a49481-9607-468a-b872-52b0dc82df24.jpg"
+          }
+        },
+        "tab_content_UHrPY4": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "4",
+            "title": "With Side Handrails & Handlebar",
+            "product_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "description": "Foldable Treadmill With Side Handrail and 10% Auto Incline",
+            "show_price": true,
+            "regular_price": "$599",
+            "sale_price": "$359",
+            "discount_percentage": "40",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM032_WF_4th_Annual_Sale_240_OFF_1276x914_b72fa48d-bc8a-4970-933c-15a0925c6f3e.jpg"
+          }
+        },
+        "tab_content_EwNayq": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "44 Inch Long Running Area",
+            "product_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "description": "2025 Upgraded Treadmills With 10% Incline & 360 LBS Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$259",
+            "discount_percentage": "50",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM002_ny_sale_240_off.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_zXYGGD",
+        "tab_wr8YRX",
+        "tab_BdrpEc",
+        "tab_kqxHG4",
+        "tab_LNVaj7",
+        "tab_dX79Vp",
+        "tab_3riLcb",
+        "tab_Cbgq69",
+        "tab_BLYAXN",
+        "tab_content_LGWw7n",
+        "tab_content_dGpHiY",
+        "tab_content_BJMJLG",
+        "tab_content_qUxb3g",
+        "tab_content_6pdrQX",
+        "tab_content_a9aTqC",
+        "tab_content_W87RKe",
+        "tab_content_UHrPY4",
+        "tab_content_EwNayq"
+      ],
+      "settings": {
+        "section_title": "Best Sellers"
+      }
+    },
+    "image_with_text_overlay_6nyyhB": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_Jr3Kfi": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_cE9Q3g": {
+          "type": "heading",
+          "settings": {
+            "text": "Celebrate Autumn Sale with Fitness Deals💰",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_TLQqnF": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Time to fall into harvest, and we’re celebrating YOU. We’ve gathered real snapshots from our amazing WELLFIT users — because hard work and strong starts deserve to be honored. 🎉💪</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Jr3Kfi",
+        "heading_cE9Q3g",
+        "richtext_TLQqnF"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Wellfit_owner_images_connection_1920x800_4e89fbc9-0323-42ea-abdb-f76d60ed179b.jpg",
+        "mobile_image": "shopify://shop_images/Wellfit_owner_images_connection_1080x1350_e90b65c5-c9cb-4225-a3f2-72714d85c93f.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 55
+      }
+    },
+    "product_section_custom_EdaUpP": {
+      "type": "product-section-custom",
+      "blocks": {
+        "tab_NmkzFP": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "TM015"
+          }
+        },
+        "tab_H8erCp": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "TM030"
+          }
+        },
+        "tab_CALgiw": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "1",
+            "tab_label": "Limited Edition"
+          }
+        },
+        "tab_wNN4pJ": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "2",
+            "tab_label": "TM007"
+          }
+        },
+        "tab_cgeBxn": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "3",
+            "tab_label": "TM015"
+          }
+        },
+        "tab_7nj3pi": {
+          "type": "tab",
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_iQUDwD": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM007"
+          }
+        },
+        "tab_bdzRNF": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM002"
+          }
+        },
+        "tab_9WWHAe": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "tab_label": "TM032"
+          }
+        },
+        "tab_content_PWFq8n": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "title": "With Side Rails",
+            "product_url": "shopify://products/tm015",
+            "description": "350 LBS Capacity Incline Treadmill",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$259",
+            "discount_percentage": "50",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm015",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM015_CS_240_off.jpg"
+          }
+        },
+        "tab_content_VtDXdr": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "1",
+            "title": "Quiet Treadmill With Removable Handrail",
+            "product_url": "shopify://products/tm030-treadmill",
+            "description": "Affordable Treadmill With 10% Incline & Mute Mode",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$159",
+            "discount_percentage": "60",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm030-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM030_ny_sale_240_off.jpg"
+          }
+        },
+        "tab_content_BWmMVd": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "1",
+            "title": "Walking Pad Treadmill With Gift Package",
+            "product_url": "shopify://products/walking-pad-treadmill-gift-edition",
+            "description": "Folding Treadmill With Remote",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$159",
+            "discount_percentage": "62",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/walking-pad-treadmill-gift-edition",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM037_PP_WF_4th_Annual_Sale_240_OFF_1276x914_71b10b71-8b2e-40e5-982c-4ef0e19c2a3c.jpg"
+          }
+        },
+        "tab_content_6cAyBh": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "2",
+            "title": "Best-Budget New Arrival",
+            "product_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "description": "Folding Treadmill With Incline & Quiet Performance",
+            "show_price": true,
+            "regular_price": "$399",
+            "sale_price": "$149",
+            "discount_percentage": "62",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM037_easter_sale_250_off_1276x914_999df4bc-8c32-4a61-9e74-821951ec7246.jpg"
+          }
+        },
+        "tab_content_UHmFHH": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "2",
+            "title": "Auto Incline Treadmill For Weight Loss",
+            "product_url": "shopify://products/tm007",
+            "description": "Foldable Treadmill With 15% Auto Incline & Side Handrail",
+            "show_price": true,
+            "regular_price": "$799",
+            "sale_price": "$429",
+            "discount_percentage": "48",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm007",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM007_WF_4th_Annual_Sale_370_OFF_1276x914_157302eb-1b21-4691-8c21-9c8ce8f59ce1.jpg"
+          }
+        },
+        "tab_content_grhnNU": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "3",
+            "title": "With Side Rails",
+            "product_url": "shopify://products/tm015",
+            "description": "350 LBS Capacity Incline Treadmill",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$239",
+            "discount_percentage": "52",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm015",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM015_WF_4th_Annual_Sale_260_OFF_1276x914_51a2317b-de14-4916-a1ac-4851280eecc7.jpg"
+          }
+        },
+        "tab_content_Dg3y4x": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "3",
+            "title": "Walking Pad With 10% Auto Incline",
+            "product_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "description": "With 10% Auto Incline & 330 lb Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$189",
+            "discount_percentage": "62",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/wp017-auto-incline-walking-pad",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/WP017_spring_sale_189_1276x914_51f4e610-da23-404a-baa2-86697f8f7e9a.jpg"
+          }
+        },
+        "tab_content_4Cd8UB": {
+          "type": "tab_content",
+          "settings": {
+            "tab_index": "4",
+            "title": "With Side Handrails & Handlebar",
+            "product_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "description": "Foldable Treadmill With Side Handrail and 10% Auto Incline",
+            "show_price": true,
+            "regular_price": "$599",
+            "sale_price": "$359",
+            "discount_percentage": "40",
+            "button_text": "Buy Now",
+            "button_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM032_WF_4th_Annual_Sale_240_OFF_1276x914_b72fa48d-bc8a-4970-933c-15a0925c6f3e.jpg"
+          }
+        },
+        "tab_content_jDy9mt": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "20 Inch Wide Running Area",
+            "product_url": "shopify://products/tm024-folding-treadmill",
+            "description": "Heavy-Duty Treadmill-450LBS Capacity-9.9mph",
+            "show_price": true,
+            "regular_price": "$1049",
+            "sale_price": "$499",
+            "discount_percentage": "55",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm024-folding-treadmill",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM024_ny_sale_550_off.jpg"
+          }
+        },
+        "tab_content_cXhkhn": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "44 Inch Long Running Area",
+            "product_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "description": "2025 Upgraded Treadmills With 10% Incline & 360 LBS Capacity",
+            "show_price": true,
+            "regular_price": "$499",
+            "sale_price": "$259",
+            "discount_percentage": "50",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/wellfit-tm002-walking-pad-treadmills-with-handle",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM002_ny_sale_240_off.jpg"
+          }
+        },
+        "tab_content_kL3nAA": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_index": "4",
+            "title": "With Side Handrails & Handlebar",
+            "product_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "description": "Foldable Treadmill With Side Handrail and 10% Auto Incline",
+            "show_price": true,
+            "regular_price": "$599",
+            "sale_price": "$359",
+            "discount_percentage": "40",
+            "button_text": "Learn More",
+            "button_url": "shopify://products/tm032-foldable-treadmill-with-auto-incline",
+            "secondary_button_text": "",
+            "secondary_button_url": "",
+            "video_i1": "",
+            "video_url1": "",
+            "feature_title_1": "",
+            "feature_des_1": "",
+            "position_x1": 36,
+            "position_y1": 51,
+            "video_i2": "",
+            "video_url2": "",
+            "feature_title_2": "",
+            "feature_des_2": "",
+            "position_x2": 48,
+            "position_y2": 42,
+            "video_i3": "",
+            "video_url3": "",
+            "feature_title_3": "",
+            "feature_des_3": "",
+            "position_x3": 67,
+            "position_y3": 14,
+            "video_i4": "",
+            "video_url4": "",
+            "feature_title_4": "",
+            "feature_des_4": "",
+            "position_x4": 15,
+            "position_y4": 70,
+            "product_image": "shopify://shop_images/TM032_BF_Sale_240_off_60day.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_NmkzFP",
+        "tab_H8erCp",
+        "tab_CALgiw",
+        "tab_wNN4pJ",
+        "tab_cgeBxn",
+        "tab_7nj3pi",
+        "tab_iQUDwD",
+        "tab_bdzRNF",
+        "tab_9WWHAe",
+        "tab_content_PWFq8n",
+        "tab_content_VtDXdr",
+        "tab_content_BWmMVd",
+        "tab_content_6cAyBh",
+        "tab_content_UHmFHH",
+        "tab_content_grhnNU",
+        "tab_content_Dg3y4x",
+        "tab_content_4Cd8UB",
+        "tab_content_jDy9mt",
+        "tab_content_cXhkhn",
+        "tab_content_kL3nAA"
+      ],
+      "settings": {
+        "section_title": "Compact Treadmill & Walking Pad"
+      }
+    },
+    "rich_text_9aVJnC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_iXLPXJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_iM7qEz": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "💌 The Best Wellness Gift 🌷",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_JtpJtr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>No guesswork, no wrong size. A Wellfit Gift Card is a thoughtful, flexible way to support their wellness journey — perfect for a fresh spring start. 🌸✨</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_iXLPXJ",
+        "heading_iM7qEz",
+        "richtext_JtpJtr"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multiple_images_with_text_893EBk": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_byExBg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Spring_sale_gift_card.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Spring Sale Gift Card",
+            "content": "<p>Let them choose the treadmill or walking pad that fits their lifestyle. Wellfit Gift Cards make spring gifting simple, flexible, and meaningful. 🌸</p>",
+            "button_url": "shopify://products/e-gift-card",
+            "button_text": "Learn More"
+          }
+        },
+        "item_9DEUgQ": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_byExBg",
+        "item_9DEUgQ"
+      ],
+      "disabled": true,
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_j6TzVa": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_kaGcJ3": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_hhQBGf": {
+          "type": "heading",
+          "settings": {
+            "text": "Best Value Buys",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_U8gndz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>High performance, low price. Our most cost-effective treadmills and walking pads are here to help you get moving, for less.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kaGcJ3",
+        "heading_hhQBGf",
+        "richtext_U8gndz"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multiple_images_with_text_3ULR9W": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_dndda8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/TM037_WF_4th_Annual_Sale_250_OFF_1600x1600_898aa216-5ac0-44e9-8f59-f14790d520ac.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Fold-Flat 5% Incline Walking Pad Treadmill",
+            "content": "<p>95% pre-assembled and easy to set up. Quiet brushless motor with 0–5% manual incline and vertical storage—ideal for small home or office spaces.<br/>Supports up to 320 lbs, features AI voice & remote control, and includes a free app subscription.<br/></p>",
+            "button_url": "shopify://products/tm037-folding-treadmill-with-incline-for-home-use",
+            "button_text": "Buy Now"
+          }
+        },
+        "item_YQHEhk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/TM037_PP_WF_4th_Annual_Sale_240_OFF_1600x1600_5d12a868-fa8c-4798-bd31-833c611aa2a7.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Foldable Treadmill With Gift Package",
+            "content": "<p>95% pre-assembled for quick and easy setup. Features a quiet motor with a 0–5% manual incline and a sturdy handrail for added support. Fully foldable for flat storage—perfect for small home or office spaces. Supports up to 320 lbs and comes with remote control plus a free app with no subscription required.</p>",
+            "button_url": "shopify://products/walking-pad-treadmill-gift-edition",
+            "button_text": "Buy Now"
+          }
+        },
+        "item_cQdEdF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/TM037_Pink_WF_4th_Annual_Sale_230_OFF_1600x1600_74c447f4-204d-44bc-947c-605bc37978f1.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "5% Incline With Foldable Handles",
+            "content": "<p>Pre-assembled and ready to use. Supports up to 320 lbs with a quiet brushless motor under 45 dB. 0–5% manual incline and adjustable speeds from 0.6–6.2 mph. Foldable for vertical storage—ideal for small homes and offices. Smart control via AI voice, remote, and free app.<br/><br/></p>",
+            "button_url": "shopify://products/tm034-folding-treadmill-with-incline",
+            "button_text": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "item_dndda8",
+        "item_YQHEhk",
+        "item_cQdEdF"
+      ],
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "featured_product_xNpX7M": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_PaXQR7": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title_jUFfpm": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_L8aFAn": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_negeFX": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_nRVExd": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_77acPV": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_PGERYa": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_wNzkDg": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_hPWrF4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "description_AH4Cni": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true
+          }
+        },
+        "pickup_availability_KU7ABM": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_PaXQR7",
+        "title_jUFfpm",
+        "badges_L8aFAn",
+        "price_negeFX",
+        "rating_nRVExd",
+        "separator_77acPV",
+        "variant_picker_PGERYa",
+        "quantity_selector_wNzkDg",
+        "buy_buttons_hPWrF4",
+        "description_AH4Cni",
+        "pickup_availability_KU7ABM"
+      ],
+      "disabled": true,
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "e-gift-card",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "faq_prDzdd": {
+      "type": "faq",
+      "blocks": {
+        "item_UF7XNB": {
+          "type": "item",
+          "settings": {
+            "title": "What’s included in the WELLFIT 4th Anniversary Sale Celebration?",
+            "content": "<p>🏷️ WELLFIT <br/>4th Anniversary Sale Is Here! 🎖️💐<br/><strong>💙🙏 Thank You for 4 Incredible Years of Support and Trust 🎊🏆</strong></p><p>Here’s what you can enjoy during our <strong>4th Anniversary Sale</strong> event:</p><p>✅ <strong>Up to $640 OFF</strong> on select treadmills & walking pads<br/><br/>✅ <strong>30-Day Worry-Free Return</strong> – shop with confidence<br/><br/>✅ Join <strong>50,000+ happy users</strong> and kickstart your wellness journey</p><p>📅 <strong>Limited-time offer valid through July. 1st</strong><br/><br/>Don’t miss your chance to upgrade your home fitness setup this fall!</p>"
+          }
+        },
+        "item_iKP8z4": {
+          "type": "item",
+          "settings": {
+            "title": "How does the 30-Day Worry-Free Return work?",
+            "content": "<p>We want you to feel confident about your purchase. That’s why we offer a <strong>30-day worry-free return period</strong>. WELLFIT will offer custmers a pre-paid return label when <a href=\"https://wellfittreadmill.com/pages/refund-policy\" target=\"_blank\" title=\"https://wellfittreadmill.com/pages/refund-policy\"><strong>applicable</strong></a>. Customers don't need to pay for the return shipping.</p>"
+          }
+        },
+        "item_8T8Y6G": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "🎁 Order Early for a Stress-Free Holiday (Christmas Tips)",
+            "content": "<p>Buying early means your gift won’t arrive late — and even if the recipient prefers something else, you’ll still have time to switch to a perfect Plan B.<br/>Ordering now also helps you avoid holiday shipping delays and ensures your treadmill arrives well before Christmas.</p>"
+          }
+        },
+        "item_hh48Fn": {
+          "type": "item",
+          "settings": {
+            "title": "How fast will my order ship?",
+            "content": "<p>Most orders are processed and shipped within <strong>1–2 business days</strong>. You’ll receive tracking information once your item is on the way.<br/></p>"
+          }
+        },
+        "item_PFmXD8": {
+          "type": "item",
+          "settings": {
+            "title": "How can I contact customer service?",
+            "content": "<p>For any questions or order support from our official website, feel free to reach out:</p><p><strong>Email</strong>: <a>service@wellfittreadmill.com</a><br/><br/><strong>Phone</strong>: +1 (281) 777-8190<br/><br/><strong>Available</strong>: Monday–Friday, 9:00 AM – 3:00 PM (GMT+8)</p>"
+          }
+        },
+        "item_pEJQgx": {
+          "type": "item",
+          "settings": {
+            "title": "How long is the warranty for WELLFIT products?",
+            "content": "<p>All WELLFIT treadmills and walking pads come with a <strong>1–3 year warranty</strong>, depending on the specific model. We stand behind the quality of our products and are here to support you long after your purchase.</p><p>For full details, please visit our official <a href=\"https://wellfittreadmill.com/pages/warranty-policy\"><strong>Warranty Policy</strong></a>.</p>"
+          }
+        },
+        "item_pVhyBJ": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to pay extra for shipping or taxes?",
+            "content": "<p><strong>No, you don't.</strong> All WELLFIT products come with <strong>free shipping and no additional taxes, </strong>consumers <strong>do not need to pay the 7%-15% sales tax</strong>. The price you see on our website is the final price — no hidden fees at checkout.<br/><br/></p>"
+          }
+        },
+        "item_JbhjGB": {
+          "type": "item",
+          "settings": {
+            "title": "How soon will I receive my order after purchase?",
+            "content": "<p>We ship from <strong>7 U.S. warehouses</strong> located in <strong>California, Georgia, Texas, New Jersey, Houston, and New York. </strong>Most orders are delivered within <strong>1–5 business days</strong>, depending on your location.<br/></p>"
+          }
+        },
+        "item_kEj6ja": {
+          "type": "item",
+          "settings": {
+            "title": "What does WELLFIT stand for?",
+            "content": "<p>WELLFIT was born from a personal journey toward better health—and we’ve grown to support over <strong>30,000+ people</strong> in making fitness not just a routine, but a <strong>lifestyle</strong>. We believe that staying active shouldn’t be a struggle—it should be an empowering, sustainable habit.</p><p>Our vision is to help more people live <strong>healthier, freer lives</strong>, and face each day with energy and optimism.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_UF7XNB",
+        "item_iKP8z4",
+        "item_8T8Y6G",
+        "item_hh48Fn",
+        "item_PFmXD8",
+        "item_pEJQgx",
+        "item_pVhyBJ",
+        "item_JbhjGB",
+        "item_kEj6ja"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Have a question about an order or your walking pad & treadmill？We have compiled resources to help you find the answers you need.<br/>Unable to find what you're looking for？Contact us via </p><p>Email <strong>service@wellfittreadmill.com</strong> </p><p>Phone: +1 (281) 777-8190</p>",
+        "team_avatar": "shopify://shop_images/Customer_Service.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: ET 11:00AM-8:00PM (Mon-Fri).",
+        "answer_time": "Average answer time: 1h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "press_q93VU6": {
+      "type": "press",
+      "blocks": {
+        "quote_zA4tW4": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/the_gadgeteer_350_100.png",
+            "logo_width": 350,
+            "author": "",
+            "content": "Space-saving and easy to move, making it great for home & office use.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_ELeG8N": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/women_health_382_100.png",
+            "logo_width": 350,
+            "author": "",
+            "content": "They really care women fitness needs",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_rmRbDe": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Forbes_348_100.png",
+            "logo_width": 350,
+            "author": "",
+            "content": "Smart, Lightweight, Portable, Affordable; Also pack with so many features",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_YYbkMb": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_zA4tW4",
+        "quote_ELeG8N",
+        "quote_rmRbDe",
+        "quote_YYbkMb"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "17247443137e326c7b": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_ryrEg3": {
+          "type": "shopify://apps/reelup-shoppable-videos/blocks/reelup_playlist/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "rl_pl_5296"
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_ryrEg3"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow_EiVWng",
+    "specification_table_AU7U8D",
+    "hot_spots_RfkWap",
+    "impact_text_CeJxHX",
+    "slideshow_fbywyx",
+    "slideshow_CVCnEz",
+    "slideshow_eRJBCE",
+    "slideshow_7pmjWM",
+    "slideshow_3geeYk",
+    "main",
+    "product_section_custom_Kdb4V7",
+    "product_section_custom_96Uce6",
+    "image_with_text_overlay_6nyyhB",
+    "product_section_custom_EdaUpP",
+    "rich_text_9aVJnC",
+    "multiple_images_with_text_893EBk",
+    "rich_text_j6TzVa",
+    "multiple_images_with_text_3ULR9W",
+    "featured_product_xNpX7M",
+    "faq_prDzdd",
+    "press_q93VU6",
+    "17247443137e326c7b"
+  ]
+}

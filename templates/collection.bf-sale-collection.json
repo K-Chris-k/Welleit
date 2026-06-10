@@ -1,0 +1,416 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "slideshow_TKdwLa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_x3KwBB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Wellfit_collection_banner2_with_text_1920x480_f592f73a-00b7-420b-8e7e-b8a388841b8d.jpg",
+            "mobile_image": "shopify://shop_images/Wellfit_collection_banner2_with_shorten_text_1500x1000_c9bf2830-83d2-4acc-ba37-ea561c0f725c.jpg",
+            "content_max_width": 400,
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#2aa8e5",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_x3KwBB"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "slideshow_hgN3rJ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_EjCL7y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_collection_banner_1920x150_537874cf-a3a7-4f32-92aa-39646fc3fa50.jpg",
+            "mobile_image": "shopify://shop_images/WELLFIT_collection_banner_1920x370.2.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_qJQe4p": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Tell your story",
+            "title": "Slide 2",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_EjCL7y",
+        "image_qJQe4p"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "text_with_icons_DxKWda": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_JckjxK": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#2aa8e5",
+            "title": "2-3 Years Warranty",
+            "content": ""
+          }
+        },
+        "item_PqXmAb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-truck",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#2aa8e5",
+            "title": "1-5Day Free Delivery",
+            "content": ""
+          }
+        },
+        "item_8yUJed": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#2aa8e5",
+            "title": "30-Day Free Return",
+            "content": ""
+          }
+        },
+        "item_wEqXDQ": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-building",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#2aa8e5",
+            "title": "7 US Warehouses",
+            "content": ""
+          }
+        },
+        "item_f9Dd36": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "#2aa8e5",
+            "title": "Phone: +1(281)777-8190",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_JckjxK",
+        "item_PqXmAb",
+        "item_8yUJed",
+        "item_wEqXDQ",
+        "item_f9Dd36"
+      ],
+      "disabled": true,
+      "name": "Text with icons",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "blog_posts_fwPKUM": {
+      "type": "blog-posts",
+      "blocks": {
+        "article_NEKdLL": {
+          "type": "article",
+          "settings": {
+            "article": "news/best-black-friday-treadmill-deals-2025",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_NEKdLL"
+      ],
+      "name": "Featured blog post",
+      "settings": {
+        "full_width": false,
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "",
+        "title": "Black Friday Buy Guide",
+        "content": "",
+        "link_url": "https://wellfittreadmill.com/blogs/news/best-black-friday-treadmill-deals-2025",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "faq_z7gfFe": {
+      "type": "faq",
+      "blocks": {
+        "item_bMQJmT": {
+          "type": "item",
+          "settings": {
+            "title": "What’s included in the WELLFIT Black Friday Sale Celebration?",
+            "content": "<p>🏷️<strong>WELLFIT Black Friday Sale Is Here!</strong>💰<br/>Time to gear up for a healthier routine this harvest year.</p><p>Here’s what you can enjoy during our Black Friday Sale event:</p><p>✅ <strong>Up to $570 OFF</strong> on select treadmills & walking pads<br/><br/>✅ <strong>30-Day Worry-Free Return</strong> – shop with confidence<br/><br/>✅ Join <strong>50,000+ happy users</strong> and kickstart your wellness journey</p><p>📅 <strong>Limited-time offer valid through Dec. 1st</strong><br/><br/>Don’t miss your chance to upgrade your home fitness setup this fall!</p>"
+          }
+        },
+        "item_EQTTnC": {
+          "type": "item",
+          "settings": {
+            "title": "How does the 30-Day Worry-Free Return work?",
+            "content": "<p>We want you to feel confident about your purchase. That’s why we offer a <strong>30-day worry-free period</strong>. If you are not satisfied with your purchase, return it within 30 days — WELLFIT will send you a <strong>pre-paid return label </strong>and <strong>cover the return shipping fee</strong>.<br/><br/><br/></p>"
+          }
+        },
+        "item_8in8nr": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "60-Day Price Guarantee",
+            "content": "<p>If the price of your purchase changes <strong>within 60 days</strong> of your order, resulting in you paying more or missing out on a gift, please contact us. We will <strong>refund the price difference</strong> or send the complimentary gift.</p><p>*Only <strong>for orders starting after 1st, Nov, 2025</strong></p>"
+          }
+        },
+        "item_hnx9Wi": {
+          "type": "item",
+          "settings": {
+            "title": "How fast will my order ship?",
+            "content": "<p>Most orders are processed and shipped within <strong>1–2 business days</strong>. You’ll receive tracking information once your item is on the way.<br/></p>"
+          }
+        },
+        "item_We6CiH": {
+          "type": "item",
+          "settings": {
+            "title": "How can I contact customer service?",
+            "content": "<p>For any questions or order support from our official website, feel free to reach out:</p><p><strong>Email</strong>: <a>service@wellfittreadmill.com</a><br/><br/><strong>Phone</strong>: +1 (281) 777-8190<br/><br/><strong>Available</strong>: Monday–Friday, 9:00 AM – 3:00 PM (GMT+8)</p>"
+          }
+        },
+        "item_GkfCLi": {
+          "type": "item",
+          "settings": {
+            "title": "How long is the warranty for WELLFIT products?",
+            "content": "<p>All WELLFIT treadmills and walking pads come with a <strong>2–3 year warranty</strong>, depending on the specific model. We stand behind the quality of our products and are here to support you long after your purchase.</p><p>For full details, please visit our official <a href=\"https://wellfittreadmill.com/pages/warranty-policy\"><strong>Warranty Policy</strong></a>.</p>"
+          }
+        },
+        "item_zbhVkV": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to pay extra for shipping or taxes?",
+            "content": "<p><strong>No, you don't.</strong> All WELLFIT products come with <strong>free shipping and no additional taxes, </strong>consumers <strong>do not need to pay the 7%-15% sales tax</strong>. The price you see on our website is the final price — no hidden fees at checkout.<br/><br/></p>"
+          }
+        },
+        "item_ed7YAA": {
+          "type": "item",
+          "settings": {
+            "title": "How soon will I receive my order after purchase?",
+            "content": "<p>We ship from <strong>7 U.S. warehouses</strong> located in <strong>California, Georgia, Texas, New Jersey, Houston, and New York. </strong>Most orders are delivered within <strong>1–5 business days</strong>, depending on your location.<br/></p>"
+          }
+        },
+        "item_bwtFnh": {
+          "type": "item",
+          "settings": {
+            "title": "What does WELLFIT stand for?",
+            "content": "<p>WELLFIT was born from a personal journey toward better health—and we’ve grown to support over <strong>30,000+ people</strong> in making fitness not just a routine, but a <strong>lifestyle</strong>. We believe that staying active shouldn’t be a struggle—it should be an empowering, sustainable habit.</p><p>Our vision is to help more people live <strong>healthier, freer lives</strong>, and face each day with energy and optimism.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_bMQJmT",
+        "item_EQTTnC",
+        "item_8in8nr",
+        "item_hnx9Wi",
+        "item_We6CiH",
+        "item_GkfCLi",
+        "item_zbhVkV",
+        "item_ed7YAA",
+        "item_bwtFnh"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Have a question about an order or your walking pad & treadmill？We have compiled resources to help you find the answers you need.<br/>Unable to find what you're looking for？Contact us via </p><p>Email <strong>service@wellfittreadmill.com</strong> </p><p>Phone: +1 (281) 777-8190</p>",
+        "team_avatar": "shopify://shop_images/Customer_Service.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 9:00am-3:00pm(GMT+8).",
+        "answer_time": "Average answer time: 1h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "1723115686f6981bf7": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_CKGmxz": {
+          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup_playlist/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "rl_pl_5296"
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_CKGmxz"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "slideshow_TKdwLa",
+    "slideshow_hgN3rJ",
+    "text_with_icons_DxKWda",
+    "main",
+    "blog_posts_fwPKUM",
+    "faq_z7gfFe",
+    "1723115686f6981bf7"
+  ]
+}

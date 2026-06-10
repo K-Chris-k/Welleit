@@ -1,0 +1,1054 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "slideshow_P3y3UH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_BLtGP9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tm007__2026_treadmill_with_free_app_1920x800_2672707b-0e19-44f3-a219-a3c573d91963.jpg",
+            "mobile_image": "shopify://shop_images/tm007__2026_treadmill_with_free_app_1080x1350_0d30f1a3-591c-4c47-954d-a5bfa7030286.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BLtGP9"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "media_with_text_rKfLfm": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_JgyTUB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM015_smart_treadmill_voice_control_29b47a59-22f8-4754-a67b-17eb16d7c4fe.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "A Movement with Mind",
+            "content": "<p><strong>World's 1st AI empowered </strong>walking pad & treadmill;⚡🏃Your Fitness, Your Way!<strong>Voice control </strong>adds a new level of intelligence and interactivity. Applicable to all <strong>Wellfit</strong> models.✔️</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JgyTUB"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "slideshow_FbByVf": {
+      "type": "slideshow",
+      "blocks": {
+        "image_kWgGc4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM007_foldable_treadmill_with_free_app_for_home_use_1920x800_bb486477-d5fb-4ccb-9e6d-6e35c45d85bd.jpg",
+            "mobile_image": "shopify://shop_images/TM007_foldable_treadmill_with_free_app_for_home_use_1276x914_faffa6d5-d71c-4d65-8c8d-89fd39a5583d.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "https://play.google.com/store/apps/details?id=com.shc.wellfit&hl=en_US",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_kWgGc4"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_ELYxDW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cGtxYU": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Dynamic ?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_cGtxYU"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#000000"
+      }
+    },
+    "image_with_text_overlay_Gh6JDU": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/TM037_treadmill_with_real_scene_running_routine_for_fun_1920x800_ad6946ed-dc91-42a4-a419-f0f48f873f3e.jpg",
+        "mobile_image": "shopify://shop_images/TM037_treadmillwithrealscenerunningroutineforfun.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "media_with_text_URiTT7": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_gPHBPa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM007_incline_treadmill_with_virtual_run_1600x1600_no_text.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Immersive Experience",
+            "content": "<p>Transform your daily run into an immersive adventure through breathtaking landscapes, bustling cityscapes, and thrilling challenges—all from the comfort of your home or gym.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_dNhGNi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TM015_treadmill_with_free_app_training_1276x914_no_text.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Ignite Your Passion for Workout",
+            "content": "<p>Take on virtual map challenges from various global regions, adding fun to your workouts and helping you achieve your health goals.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gPHBPa",
+        "image_dNhGNi"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_NmEGL7": {
+      "type": "multi-column",
+      "blocks": {
+        "item_3rMFjF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/About_Wellfit_Walking_Pad_1000X1000_424d397a-ae20-44c2-a5db-c31042793780.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://collections/walking-pad",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QFnBX4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/About_Wellfit_Foldable_Treadmill_1000x1000_21109967-2397-4bd1-91c4-14e1b89aca4e.webp",
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "shopify://collections/folding-treadmill",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cFPagV": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_3rMFjF",
+        "item_QFnBX4",
+        "item_cFPagV"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_link_blocks_ry3ciT": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_dHEk9K": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Treadmill_With_Trainging_APP_1.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_P7DbMa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Treadmill_With_Trainging_APP_4.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_gWJTCX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Treadmill_With_Trainging_APP_2.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_dhwbzL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Treadmill_With_Trainging_APP_5.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_kHUh98": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WELLFIT_Treadmill_With_Trainging_APP_3.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_dHEk9K",
+        "item_P7DbMa",
+        "item_gWJTCX",
+        "item_dhwbzL",
+        "item_kHUh98"
+      ],
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "Find The Way You Need",
+        "content": "<p>Scroll left and right to see</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#1a1a1a",
+        "heading_color": "#f0c417",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_kKzdFg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LeQJHm": {
+          "type": "heading",
+          "settings": {
+            "text": "More Fun in the App",
+            "heading_tag": "h1",
+            "text_color": "#000000",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LeQJHm"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "timeline_fDa6f6": {
+      "type": "timeline",
+      "blocks": {
+        "slide_9RbRj7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wellfit_app_description_15.jpg",
+            "navigation_label": "ZWIFT App",
+            "subheading": "",
+            "title": "Connect with ZWIFT APP",
+            "content": "<p>Step 1: Turn your treadmill on, and launch Zwift.<br/><br/>Step 2:Select the type of running in the ZWIFT APP<br/><br/>Step 3:Connecting WELLFIT TM Linker<br/><br/>Step 4:Select your Zwift workout by clicking the blue Training icon under Run type.<br/><br/>Step 5:Click workout.<br/><br/>Step 6: You're ready to run!</p>"
+          }
+        },
+        "slide_JFffPV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wellfit_app_description_18.jpg",
+            "navigation_label": "WELLFIT App",
+            "subheading": "No subscription fees",
+            "title": "Connect with WELLFIT",
+            "content": "<p>STEP 1: Turn on the Bluetooth and location on your phone.</p><p>STEP 2: Pair with Treadmill.</p><p>STEP 3: Add device.</p><p>STEP 4: Choose your program you need.</p>"
+          }
+        },
+        "slide_MjC8jT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wellfit_app_description_17.jpg",
+            "navigation_label": "Kinomap App",
+            "subheading": "",
+            "title": "Connect with Kinomap",
+            "content": "<p>STEP 1: Choose the treadmill.</p><p>STEP 2: Choose the brand \"FTMS\".</p><p>STEP 3: Interactive--Treadmill Bluetooth smart 4.0.</p><p>STEP 4: Fould our treadmill--WELLFIT TM Linker Stetup complete, and you are ready to exercise.</p>"
+          }
+        },
+        "slide_KieNUb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wellfit_app_description_16.jpg",
+            "navigation_label": "Apple Health",
+            "subheading": "",
+            "title": "Connect with Apple Health",
+            "content": "<p>STEP 1: Open the Health app on your iPhone or iPad.</p><p>STEP 2: Tap your profile picture in the upper-right corner.</p><p>STEP 3: Under Privacy, tap App and Services.</p><p>STEP 4: Tap WELLFIT app and turn on the health categories.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_9RbRj7",
+        "slide_JFffPV",
+        "slide_MjC8jT",
+        "slide_KieNUb"
+      ],
+      "settings": {
+        "full_width": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_zQqxyW": {
+      "type": "faq",
+      "blocks": {
+        "item_rnCRwb": {
+          "type": "item",
+          "settings": {
+            "title": "Is the WELLFIT APP Free? Or do I have to pay for subscription?",
+            "content": "<p>Yes, the WELLFIT APP is <strong>completely free to use</strong> — no paid subscription required.<br/><br/>Just download it from the App Store or Google Play, create an account, and you’re ready to start.</p>"
+          }
+        },
+        "item_W8j3WJ": {
+          "type": "item",
+          "settings": {
+            "title": "Do I have to download the APP to use the treadmill?",
+            "content": "<p>No, you don't have to download the WELLFIT APP to use the treadmill. You can use the treadmill separately or you can also use the APP with the treadmill to enhance your workout experience.</p>"
+          }
+        },
+        "item_b9CpNt": {
+          "type": "item",
+          "settings": {
+            "title": "Can I connect the treadmill with Apple Health?",
+            "content": "<p>Yes, you can connect our treadmill with Apple Health. </p>"
+          }
+        },
+        "item_CnyCKV": {
+          "type": "item",
+          "settings": {
+            "title": "What fitness apps are compatible with this treadmill?",
+            "content": "<p>The treadmill syncs with <strong>WELLFIT Fitness</strong>, <strong>Apple Health</strong> and supports <strong>Kinomap</strong> and <strong>Zwift</strong> for interactive training. It is also compatible with <strong>FitShow</strong>, <strong>WHOOP</strong>, and other apps that support the <strong>FTMS</strong> (Fitness Machine Service) protocol, ensuring broader connectivity with your favorite fitness platforms.</p>"
+          }
+        },
+        "item_WMiVcn": {
+          "type": "item",
+          "settings": {
+            "title": "How to use the treadmill bluetooth speaker?",
+            "content": "<p>*Provided that the model comes with built-in speakers.<br/>Turn on the treadmill and wait for standby mode. Press and hold the “−” button for 3 seconds until you hear a beep. Search and connect:<br/><strong>WELLFIT TM Audio (for speaker)</strong><br/><strong>WELLFIT TM Linker (for app)</strong><br/>“Connected” will appear once pairing is successful.</p>"
+          }
+        },
+        "item_K4x8pd": {
+          "type": "item",
+          "settings": {
+            "title": "Does the APP has a step counter?",
+            "content": "<p>Yes, it tracks your steps during your workout and you can also see how many miles you haved ran/walked.</p>"
+          }
+        },
+        "item_LrA6gH": {
+          "type": "item",
+          "settings": {
+            "title": "How to control the treadmill with APP?",
+            "content": "<p>When you open the APP, you’ll see three options at the bottom: <strong>Home</strong>, <strong>Workout</strong>, and <strong>Profile</strong>. Tap the second one, <strong>Workout</strong>, and you’ll enter a new screen. In the lower right corner, there’s a <strong>green remote control icon</strong> — tap it to access the interface where you can control the treadmill through the APP.</p>"
+          }
+        },
+        "item_WNTbNJ": {
+          "type": "item",
+          "settings": {
+            "title": "Is there a way to connect Wellfit app to Fire TV, so I get scenary?",
+            "content": "<p><strong>For IOS devices:</strong> Users can use the AirPlay feature to mirror their iPhone or Ipad screen to a TV that supports AirPlay or an Apple TV.</p><p><strong>For Android devices: </strong>Users can use features like \"Cast\", \"Wireless Display\", or \"Smart View\" to project their phone screen onto a TV that supports Miracast or Chromecast.</p>"
+          }
+        },
+        "item_4QtrbL": {
+          "type": "item",
+          "settings": {
+            "title": "How do I select walks through the WELLFIT App? I see the run option, but is there a way to walk at my own pace?",
+            "content": "<p>Simply start a Free Run — it lets you walk or run at any pace you like while enjoying scenic routes, or your favorite TV shows.</p>"
+          }
+        },
+        "item_mtJeii": {
+          "type": "item",
+          "settings": {
+            "title": "I failed to register the WELLFIT APP, I can’t receive the verification code on my phone.",
+            "content": "<p>Please contact WELLFIT Support Team and we will solve this issue.</p>"
+          }
+        },
+        "item_QUYwq4": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Why don’t some of my workouts get tracked on the app? My treadmill is connected.",
+            "content": "<p>Our APP can currently sync data only when you’re actively using it and staying on its interface. If you switch to another app and let the WELLFIT APP run in the background, your workout data won’t be recorded, and the connection between your phone and the treadmill may disconnect over time. To ensure your workout data is fully tracked, please stay on the WELLFIT APP interface during your session.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_rnCRwb",
+        "item_W8j3WJ",
+        "item_b9CpNt",
+        "item_CnyCKV",
+        "item_WMiVcn",
+        "item_K4x8pd",
+        "item_LrA6gH",
+        "item_WNTbNJ",
+        "item_4QtrbL",
+        "item_mtJeii",
+        "item_QUYwq4"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Some frequently asked questions from WELLFIT APP users</p><p><br/>If you have any quesitons, please feel free to contact us at:            <br/><br/>Email:  <a href=\"mailto:service@wellfittreadmill.com\" target=\"_blank\" title=\"mailto:service@wellfittreadmill.com\">service@wellfittreadmill.com</a></p><p>Phone: <strong>+1 (281) 777-8190</strong></p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "press_qrJnDi": {
+      "type": "press",
+      "blocks": {
+        "quote_CzmDjr": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_Le7Dn7": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_Nbgxw4": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_CzmDjr",
+        "quote_Le7Dn7",
+        "quote_Nbgxw4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "image_with_text_overlay_fr73VQ": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/TM034_Pink_foldable_treadmill_for_home_use_1500x750_no_text.jpg",
+        "mobile_image": "shopify://shop_images/TM034_Pink_foldable_treadmill_for_home_use_1600x1600_no_text.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "video_JmFUhU": {
+      "type": "video",
+      "blocks": {
+        "play_FgyLqY": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_fcwahw": {
+          "type": "heading",
+          "settings": {
+            "text": "Watch App Tutorial Video",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "play_FgyLqY",
+        "heading_fcwahw"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://youtu.be/VtayqauZl7s",
+        "poster": "shopify://shop_images/TM010_folding_treadmill_with_incline_APP_banner.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "featured_product_VRLTzw": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_fEqtPa": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title_c7afTB": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_j4itkd": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_gV78kj": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_Wt4FtA": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_99UtQM": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_7hw4mW": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_NaUUgm": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_9YrFeD": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_Xi6DDL": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_73LgAq": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_fEqtPa",
+        "title_c7afTB",
+        "badges_j4itkd",
+        "price_gV78kj",
+        "rating_Wt4FtA",
+        "separator_99UtQM",
+        "description_7hw4mW",
+        "variant_picker_NaUUgm",
+        "quantity_selector_9YrFeD",
+        "buy_buttons_Xi6DDL",
+        "pickup_availability_73LgAq"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "tm037-folding-treadmill-with-incline-for-home-use",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "featured_product_cPyFn3": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_Wiwz6k": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title_4UBBC7": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_EtWnaM": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_YDXmDB": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_XpkMrr": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_AegtzQ": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_DBeCKB": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_nrRRF6": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_4YQ9Cc": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_dJGxcb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_HwF9jC": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_Wiwz6k",
+        "title_4UBBC7",
+        "badges_EtWnaM",
+        "price_YDXmDB",
+        "rating_XpkMrr",
+        "separator_AegtzQ",
+        "description_DBeCKB",
+        "variant_picker_nrRRF6",
+        "quantity_selector_4YQ9Cc",
+        "buy_buttons_dJGxcb",
+        "pickup_availability_HwF9jC"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "wellfit-tm007-foldable-auto-incline-treadmill",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "featured_product_NfiEJD": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_nphRP7": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title_7eEcE4": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_6RJkwi": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_RNjyQJ": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_bzjEz9": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_TK3e3Y": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_G4fcKt": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_GYnfYt": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_6CAXNw": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_xcqKXq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_YP9tha": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_nphRP7",
+        "title_7eEcE4",
+        "badges_6RJkwi",
+        "price_RNjyQJ",
+        "rating_bzjEz9",
+        "separator_TK3e3Y",
+        "description_G4fcKt",
+        "variant_picker_GYnfYt",
+        "quantity_selector_6CAXNw",
+        "buy_buttons_xcqKXq",
+        "pickup_availability_YP9tha"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "tm029-pro-treadmill",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "video_iGJjbV": {
+      "type": "video",
+      "blocks": {
+        "play_JjAYtY": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_TRW6Aw": {
+          "type": "heading",
+          "settings": {
+            "text": "Watch App Tutorial Video",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "play_JjAYtY",
+        "heading_TRW6Aw"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=jUB3FGdeXiY&t=393s",
+        "poster": "shopify://shop_images/TM010_folding_treadmill_with_incline_APP_banner_2_jpg.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_P3y3UH",
+    "media_with_text_rKfLfm",
+    "slideshow_FbByVf",
+    "rich_text_ELYxDW",
+    "image_with_text_overlay_Gh6JDU",
+    "media_with_text_URiTT7",
+    "multi_column_NmEGL7",
+    "image_link_blocks_ry3ciT",
+    "rich_text_kKzdFg",
+    "timeline_fDa6f6",
+    "faq_zQqxyW",
+    "press_qrJnDi",
+    "image_with_text_overlay_fr73VQ",
+    "video_JmFUhU",
+    "featured_product_VRLTzw",
+    "featured_product_cPyFn3",
+    "featured_product_NfiEJD",
+    "video_iGJjbV"
+  ]
+}

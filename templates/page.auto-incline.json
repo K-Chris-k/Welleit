@@ -1,0 +1,449 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */{
+    "sections": {
+        "main": {
+            "type": "main-page",
+            "disabled": true,
+            "settings": {
+                "content_width": "80ch"
+            }
+        },
+        "slideshow_YVYYKJ": {
+            "type": "slideshow",
+            "blocks": {
+                "image_4VQNjp": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Spring_sale_banner_1920x800_no_button.jpg",
+                        "mobile_image": "shopify://shop_images/Spring_sale_banner_1080x1350_no_button.jpg",
+                        "content_max_width": 780,
+                        "mobile_text_position": "place-self-center text-center",
+                        "desktop_text_position": "sm:place-self-center sm:text-center",
+                        "subheading": "",
+                        "title": "",
+                        "heading_tag": "h0",
+                        "button_text": "",
+                        "button_link": "",
+                        "text_color": "#ffffff",
+                        "button_background": "#ffffff",
+                        "button_text_color": "#000000",
+                        "overlay_color": "#000000",
+                        "overlay_opacity": 0,
+                        "background": "",
+                        "background_gradient": ""
+                    }
+                },
+                "image_E38j3U": {
+                    "type": "image",
+                    "disabled": true,
+                    "settings": {
+                        "content_max_width": 780,
+                        "mobile_text_position": "place-self-center text-center",
+                        "desktop_text_position": "sm:place-self-center sm:text-center",
+                        "subheading": "Tell your story",
+                        "title": "Slide 2",
+                        "heading_tag": "h0",
+                        "button_text": "",
+                        "button_link": "",
+                        "text_color": "#ffffff",
+                        "button_background": "#ffffff",
+                        "button_text_color": "#000000",
+                        "overlay_color": "#000000",
+                        "overlay_opacity": 30,
+                        "background": "",
+                        "background_gradient": ""
+                    }
+                }
+            },
+            "block_order": [
+                "image_4VQNjp",
+                "image_E38j3U"
+            ],
+            "disabled": true,
+            "settings": {
+                "full_width": true,
+                "allow_transparent_header": true,
+                "show_initial_transition": false,
+                "image_size": "auto",
+                "controls_type": "dots",
+                "transition_type": "fade_with_text",
+                "autoplay": true,
+                "cycle_speed": 6,
+                "background": "#f2f2f2",
+                "background_gradient": ""
+            }
+        },
+        "section_seiper_3PdyeM": {
+            "type": "Section-seiper",
+            "blocks": {
+                "image_rcmUL4": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009-39_900X1400_b102761e-592c-47cd-af4d-917dcd1b3f1d.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_4UbcWk": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM012-6_900X1400_a04702d8-cc74-4ec4-88f3-44dadab1c430.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_dYjP4f": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM007-3_900X1400_28770725-1f66-4728-a399-ab283ef4b4d2.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_QHx7Qd": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009-45_900X1400_726b077c-8bed-4333-b837-ec64ad900f5f.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_xe8NNL": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009-49_900X1400_1b92535d-6574-4c14-b838-95c2344bba7e.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_UHPbdq": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM010-1_900x1400_b8f547da-470a-48d7-ba82-1dcd7ba1ea8f.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_YGnVJ9": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM007-2_900X1400_96fa6a50-eb7c-45ec-9211-322392d93eb9.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_V74zHW": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009_PINK_900x1400_5483eb1c-9eb7-452d-bbf6-0b48b28fb506.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_FeJdQd": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM024_deals_review_900x1400_31341952-0d64-4505-a8e7-81d59e8973d8.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_xcthcz": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009-38_900X1400_ea94ec0f-b5c3-47ba-9c82-8e269dd4b20f.jpg",
+                        "bg_color": "#f2edff",
+                        "name": ""
+                    }
+                },
+                "image_dtqhfy": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009-22_900X1400_579537fb-bb7e-4124-9f60-13cad3703d8c.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_YHTEj6": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/WP009_mariasol7126_900x1400_d9aa205c-718d-49f5-9089-1a513c7facb0.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                },
+                "image_LVJP7U": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/TM007-1_900X1400_b34e4dd5-26a4-4db9-a68a-900803fee8ad.jpg",
+                        "bg_color": "#ffffff",
+                        "name": ""
+                    }
+                }
+            },
+            "block_order": [
+                "image_rcmUL4",
+                "image_4UbcWk",
+                "image_dYjP4f",
+                "image_QHx7Qd",
+                "image_xe8NNL",
+                "image_UHPbdq",
+                "image_YGnVJ9",
+                "image_V74zHW",
+                "image_FeJdQd",
+                "image_xcthcz",
+                "image_dtqhfy",
+                "image_YHTEj6",
+                "image_LVJP7U"
+            ],
+            "disabled": true,
+            "settings": {
+                "infinte": "35",
+                "heading": "WELLFIT IN THE MOVE",
+                "text_color": "",
+                "subheading": "Enjoy the freedom to run whenever and wherever you desire. No need for a gym memebership or travelling to the gym. No more worries about hot/rainy\ud83c\udf27\ufe0f/cold/snowy weather-run in the comfort of your home \ud83c\udfe0 Compact and space-saving, it fits under any table or sofa effortlessly\ud83d\udce3",
+                "subheading_color": "",
+                "background_color": ""
+            }
+        },
+        "combo_sale_dX7gRJ": {
+            "type": "combo-sale",
+            "blocks": {
+                "feature_CCB4B9": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-file\" viewbox=\"0 0 24 24\">\n        <path d=\"M21.212 19.001c.206-3.291.266-6.59.18-9.886a3.274 3.274 0 0 0-.629-1.857c-1.508-2.053-2.708-3.33-4.688-4.858a3.22 3.22 0 0 0-1.898-.663A99.44 99.44 0 0 0 12 1.714c-2.326 0-4.204.069-6.144.204a3.297 3.297 0 0 0-3.069 3.08C2.642 7.33 2.57 9.666 2.571 12c0 2.4.074 4.742.216 7.001a3.295 3.295 0 0 0 3.069 3.08c1.94.136 3.818.205 6.144.205s4.203-.069 6.144-.204a3.296 3.296 0 0 0 3.068-3.08Z\" fill=\"currentColor\" fill-opacity=\"0\"></path>\n        <path d=\"M21.212 19.001c.206-3.291.266-6.59.18-9.886a3.274 3.274 0 0 0-.629-1.857c-1.508-2.053-2.708-3.33-4.688-4.858a3.22 3.22 0 0 0-1.898-.663A99.44 99.44 0 0 0 12 1.714c-2.326 0-4.204.069-6.144.204a3.297 3.297 0 0 0-3.069 3.08C2.642 7.33 2.57 9.666 2.571 12c0 2.4.074 4.742.216 7.001a3.295 3.295 0 0 0 3.069 3.08c1.94.136 3.818.205 6.144.205s4.203-.069 6.144-.204a3.296 3.296 0 0 0 3.068-3.08Z\" stroke=\"currentColor\"></path>\n        <path d=\"M9 7h5M9 17h6M9 12h6\" stroke=\"currentColor\" stroke-linecap=\"round\"></path>\n      </svg>",
+                        "text": "30-Day Trial"
+                    }
+                },
+                "feature_6aYGAi": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-credit-card\" viewbox=\"0 0 24 24\">\n        <path d=\"M1.714 16.882c0 1.36 1.063 2.48 2.4 2.71 1.773.307 3.456.714 7.886.714s6.113-.407 7.886-.713c1.337-.232 2.4-1.351 2.4-2.709V6.708c0-1.183-.806-2.203-1.975-2.39A53.325 53.325 0 0 0 12 3.694c-4.43 0-6.114.407-7.887.713-1.337.232-2.4 1.351-2.4 2.709v9.766Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"M22.286 9.588H1.714V7.02c0-1.305 1.02-2.378 2.306-2.597.235-.04.466-.08.703-.124 1.584-.288 3.351-.605 7.277-.605 3.69 0 6.617.352 8.39.638 1.12.182 1.896 1.162 1.896 2.297v2.959Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"M14.666 15.804h3.485\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>",
+                        "text": "Tax-Free"
+                    }
+                },
+                "feature_dXcPwh": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-phone\" viewbox=\"0 0 24 24\">\n        <path d=\"M7.102 7.137a2.628 2.628 0 0 0-3.895.421c-.14.192-.312.415-.531.691a4.843 4.843 0 0 0 .007 6.028c1.039 1.287 2.127 2.586 3.343 3.804 1.217 1.217 2.516 2.305 3.805 3.342 1.742 1.406 4.276 1.406 6.026.009.31-.249.554-.432.76-.583 1.237-.903 1.448-2.599.445-3.758a44.912 44.912 0 0 0-1.42-1.542c-.657-.695-1.789-.772-2.512-.144-.125.11-.287.257-.511.464-2-1.188-3.214-2.417-4.382-4.382.213-.226.36-.39.472-.517a1.827 1.827 0 0 0-.148-2.503c-.48-.448-.963-.897-1.459-1.33Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-linejoin=\"round\"></path>\n        <path d=\"M17.297 10.644a4.354 4.354 0 0 0-1.508-2.517 4.354 4.354 0 0 0-2.875-.994M22.59 9.77a9.824 9.824 0 0 0-3.405-5.678 9.828 9.828 0 0 0-6.494-2.246\" stroke=\"currentColor\" stroke-linecap=\"round\"></path>\n      </svg>",
+                        "text": "1(281)777-8190"
+                    }
+                },
+                "feature_c4Anqj": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-recycle\" viewbox=\"0 0 24 24\">\n        <path d=\"M14.097 4.087c.466-1.317.985-2.602.985-2.602 1.536 1.093 2.908 2.708 3.42 5.005a1.41 1.41 0 0 1-.337 1.26c-1.595 1.732-3.588 2.445-5.464 2.623 0 0 .206-1.466.472-2.88l-1.514-.406a5.143 5.143 0 0 0-4.131.656l-.072.045.894-1.447a5.143 5.143 0 0 1 5.707-2.266l.04.012ZM4.248 16.149c-1.39-.112-2.769-.283-2.769-.283.66-1.766 1.864-3.508 3.948-4.598a1.41 1.41 0 0 1 1.307 0c2.086 1.09 3.29 2.832 3.948 4.598 0 0-1.468.181-2.904.291v1.565a5.143 5.143 0 0 0 1.702 3.823l.063.057-1.63-.489a5.143 5.143 0 0 1-3.665-4.925v-.043.004ZM20.357 18.679a71.67 71.67 0 0 1 1.522 2.33c-1.786.596-3.898.756-6.058-.18A1.41 1.41 0 0 1 15 19.814c-.463-2.308.135-4.34 1.094-5.963 0 0 1.064 1.029 2.052 2.076l1.217-.984a5.143 5.143 0 0 0 1.903-3.728l.005-.084.644 1.575a5.143 5.143 0 0 1-1.525 5.949l-.035.024h.002Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-linejoin=\"round\"></path>\n      </svg>",
+                        "text": "2-3 Year Warranty"
+                    }
+                },
+                "feature_PxKyqU": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-pin\" viewbox=\"0 0 24 24\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.223 9.51c0 5.526-5.047 10.497-7.233 12.392a1.5 1.5 0 0 1-1.98 0C8.823 20.007 3.776 15.035 3.776 9.51a8.224 8.224 0 0 1 16.447 0Zm-4.855-.484a3.368 3.368 0 1 1-6.736 0 3.368 3.368 0 0 1 6.736 0Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>",
+                        "text": "7 USA Warehouses"
+                    }
+                },
+                "feature_JRyUrW": {
+                    "type": "feature",
+                    "settings": {
+                        "icon": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"2\" width=\"32\" height=\"32\" class=\"hidden sm:block icon icon-picto-at-sign\" viewbox=\"0 0 24 24\">\n        <path d=\"M16.994 12a4.946 4.946 0 1 1-9.89 0 4.946 4.946 0 0 1 9.891 0v0h-.001Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"M16.994 12v2.143c0 5.753 9.017.329 4.285-7.483a10.864 10.864 0 0 0-9.312-5.374 10.715 10.715 0 1 0 4.154 20.605\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>",
+                        "text": "service@wellfittreadmill.com"
+                    }
+                }
+            },
+            "block_order": [
+                "feature_CCB4B9",
+                "feature_6aYGAi",
+                "feature_dXcPwh",
+                "feature_c4Anqj",
+                "feature_PxKyqU",
+                "feature_JRyUrW"
+            ],
+            "settings": {
+                "title": "Auto Incline",
+                "description": "<p>Challenge your fitness goals with treadmills featuring automatic incline. Adjust levels mid-workout to simulate real terrain and burn more calories.</p>"
+            }
+        },
+        "bike_catalog_E3kinW": {
+            "type": "bike-catalog",
+            "blocks": {
+                "navigation_menu_NppcML": {
+                    "type": "navigation_menu",
+                    "settings": {
+                        "menu": "collection"
+                    }
+                },
+                "product_base_JMNNet": {
+                    "type": "product_base",
+                    "settings": {
+                        "product_name": "TM007 - Height Adjustable Treadmill With Auto Incline",
+                        "product_id": "8881135157481",
+                        "subtitle": "A wide range for different height users",
+                        "reviews_name": "",
+                        "reviews_count": "",
+                        "main_image": "shopify://shop_images/TM007_independence_day_sale_479.jpg",
+                        "hover_image": "shopify://shop_images/newtm007_virtual_run_1600_notext.jpg",
+                        "price": "479",
+                        "compare_price": "899",
+                        "read_more_text": "Buy Now",
+                        "product_url": "shopify://products/tm007"
+                    }
+                },
+                "product_specs_UFbWr6": {
+                    "type": "product_specs",
+                    "settings": {
+                        "product_name": "TM007 - Height Adjustable Treadmill With Auto Incline",
+                        "spec_group1_title": "4.2 - 6.5\"",
+                        "spec_group1_value": "Wider User Range",
+                        "spec_group2_title": "15%",
+                        "spec_group2_value": "Auto Incline",
+                        "spec_group3_title": "400 Lbs",
+                        "spec_group3_value": "Weight Capacity",
+                        "spec_group4_title": "18x45 Inch",
+                        "spec_group4_value": "Running Area",
+                        "spec_group5_title": "1.0-8.7 MPH",
+                        "spec_group5_value": "Speed Range",
+                        "spec_group6_title": "4 HP",
+                        "spec_group6_value": "Brushless Motor",
+                        "spec_group7_title": "",
+                        "spec_group7_value": "",
+                        "spec_group8_title": "",
+                        "spec_group8_value": "",
+                        "spec_group9_title": "",
+                        "spec_group9_value": ""
+                    }
+                },
+                "product_base_486ViC": {
+                    "type": "product_base",
+                    "settings": {
+                        "product_name": "TM029 - 500 Lbs Capacity Auto Incline Treadmill",
+                        "product_id": "8840582791401",
+                        "subtitle": "Safe and stable run for every body type",
+                        "reviews_name": "",
+                        "reviews_count": "",
+                        "main_image": "shopify://shop_images/TM029_independence_day_sale_769.jpg",
+                        "hover_image": "shopify://shop_images/TM029-2_1600X1600_8acf0ff8-98da-40fd-b57d-b2a36e681597.jpg",
+                        "price": "769",
+                        "compare_price": "1299",
+                        "read_more_text": "Buy Now",
+                        "product_url": "shopify://products/tm029-auto-incline-folding-treadmill"
+                    }
+                },
+                "product_specs_kqXTak": {
+                    "type": "product_specs",
+                    "settings": {
+                        "product_name": "TM029 - 500 Lbs Capacity Auto Incline Treadmill",
+                        "spec_group1_title": "20x55 Inch",
+                        "spec_group1_value": "Running Area",
+                        "spec_group2_title": "500 Lbs",
+                        "spec_group2_value": "Weight Capacity",
+                        "spec_group3_title": "12%",
+                        "spec_group3_value": "Auto Incline",
+                        "spec_group4_title": "1.0-10.0 MPH",
+                        "spec_group4_value": "Speed Range",
+                        "spec_group5_title": "4.5 HP",
+                        "spec_group5_value": "Brushless Motor",
+                        "spec_group6_title": "3 Ways",
+                        "spec_group6_value": "Smart Control",
+                        "spec_group7_title": "",
+                        "spec_group7_value": "",
+                        "spec_group8_title": "",
+                        "spec_group8_value": "",
+                        "spec_group9_title": "",
+                        "spec_group9_value": ""
+                    }
+                },
+                "product_base_9Rwcph": {
+                    "type": "product_base",
+                    "settings": {
+                        "product_name": "[New Arrival] WP017 10% Auto Incline Under Desk Walking Pad",
+                        "product_id": "8833414004969",
+                        "subtitle": "Ideal for staying active while working or relaxing.",
+                        "reviews_name": "",
+                        "reviews_count": "",
+                        "main_image": "shopify://shop_images/WP017_independence_day_sale_199.jpg",
+                        "hover_image": "shopify://shop_images/WP017_Auto_Incline_Home_Walking_PAD_300_300.jpg",
+                        "price": "199",
+                        "compare_price": "499",
+                        "read_more_text": "Buy Now",
+                        "product_url": "shopify://products/wp017-auto-incline-walking-pad"
+                    }
+                },
+                "product_specs_TPPeLq": {
+                    "type": "product_specs",
+                    "settings": {
+                        "product_name": "[New Arrival] WP017 10% Auto Incline Under Desk Walking Pad",
+                        "spec_group1_title": "10%",
+                        "spec_group1_value": "Auto Incline",
+                        "spec_group2_title": "330 Lbs",
+                        "spec_group2_value": "Weight Capacity",
+                        "spec_group3_title": "16x40 Inch",
+                        "spec_group3_value": "Running Area",
+                        "spec_group4_title": "3 Ways",
+                        "spec_group4_value": "Smart Control",
+                        "spec_group5_title": "",
+                        "spec_group5_value": "",
+                        "spec_group6_title": "",
+                        "spec_group6_value": "",
+                        "spec_group7_title": "",
+                        "spec_group7_value": "",
+                        "spec_group8_title": "",
+                        "spec_group8_value": "",
+                        "spec_group9_title": "",
+                        "spec_group9_value": ""
+                    }
+                }
+            },
+            "block_order": [
+                "navigation_menu_NppcML",
+                "product_base_JMNNet",
+                "product_specs_UFbWr6",
+                "product_base_486ViC",
+                "product_specs_kqXTak",
+                "product_base_9Rwcph",
+                "product_specs_TPPeLq"
+            ],
+            "settings": {
+                "section_title": "Our Bikes"
+            }
+        },
+        "174547667086787832": {
+            "type": "apps",
+            "blocks": {
+                "reelup_shoppable_videos_reels_reelup_playlist_eRAkRY": {
+                    "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup_playlist/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+                    "settings": {
+                        "playlist_id": "rl_pl_5296"
+                    }
+                }
+            },
+            "block_order": [
+                "reelup_shoppable_videos_reels_reelup_playlist_eRAkRY"
+            ],
+            "settings": {
+                "full_width": true,
+                "remove_vertical_spacing": false,
+                "remove_horizontal_spacing": false,
+                "background": "",
+                "background_gradient": "",
+                "text_color": ""
+            }
+        }
+    },
+    "order": [
+        "main",
+        "slideshow_YVYYKJ",
+        "section_seiper_3PdyeM",
+        "combo_sale_dX7gRJ",
+        "bike_catalog_E3kinW",
+        "174547667086787832"
+    ]
+}
