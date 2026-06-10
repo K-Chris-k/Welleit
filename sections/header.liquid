@@ -227,7 +227,184 @@ the underlying logic of the menu.
       }
     }
   {%- endif -%}
-  
+
+  /* ================================================================
+     Header Custom Country Selector — scoped with .hcs-* prefix
+     to prevent naming conflicts with global / theme styles
+     ================================================================ */
+  .hcs-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .hcs-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    color: currentColor;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: 4px;
+    transition: opacity 0.15s ease;
+  }
+
+  .hcs-trigger:hover {
+    opacity: 0.75;
+  }
+
+  .hcs-trigger-badge {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hcs-trigger-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hcs-trigger-badge svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .hcs-trigger-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .hcs-chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .hcs-wrapper[data-open="true"] .hcs-chevron {
+    transform: rotate(180deg);
+  }
+
+  .hcs-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 170px;
+    background: rgb(var(--color-background, 255 255 255));
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 500;
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    scrollbar-width: thin;
+  }
+
+  .hcs-dropdown::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .hcs-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .hcs-dropdown::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .hcs-wrapper[data-open="true"] .hcs-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .hcs-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.875rem;
+    transition: background 0.12s ease;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .hcs-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+  }
+
+  .hcs-item-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hcs-item-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hcs-item-badge svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .hcs-item-name {
+    flex: 1;
+    line-height: 1.3;
+  }
+
+  /* iPad mini / iPad Air / iPad Pro — hide text label, keep icon */
+  @media screen and (max-width: 1024px) {
+    .hcs-trigger-text {
+      display: none;
+    }
+    .hcs-dropdown {
+      right: -4px;
+    }
+  }
+
+  /* Mobile — keep in icon bar, shift dropdown if near edge */
+  @media screen and (max-width: 699px) {
+    .hcs-dropdown {
+      right: -6px;
+      min-width: 150px;
+    }
+    .hcs-item {
+      padding: 9px 14px;
+    }
+  }
+
 </style>
 
 {%- if section.settings.custom_menu != blank -%}
@@ -488,6 +665,82 @@ the underlying logic of the menu.
             </div>
           {%- endif -%}
 
+          {%- comment -%} Custom Country Selector Block {%- endcomment -%}
+          {%- assign hcs_selector_block = false -%}
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'country_selector' -%}
+              {%- assign hcs_selector_block = block -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if hcs_selector_block -%}
+            {%- assign hcs_item_blocks = section.blocks | where: "type", "country_item" -%}
+            {%- if hcs_item_blocks.size > 0 -%}
+              {%- assign hcs_first_item = hcs_item_blocks | first -%}
+              <div
+                class="hcs-wrapper"
+                id="hcs-{{ section.id }}"
+                data-open="false"
+                {{ hcs_selector_block.shopify_attributes }}
+              >
+                <button
+                  type="button"
+                  class="hcs-trigger"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  aria-controls="hcs-dropdown-{{ section.id }}"
+                  aria-label="{{ hcs_selector_block.settings.trigger_label | default: 'Select country' | escape }}"
+                >
+                  {%- if hcs_first_item.settings.badge_type == 'image' and hcs_first_item.settings.badge_image != blank -%}
+                    <span class="hcs-trigger-badge">
+                      {{- hcs_first_item.settings.badge_image | image_url: width: 44 | image_tag: loading: 'lazy', alt: hcs_first_item.settings.country_name -}}
+                    </span>
+                  {%- elsif hcs_first_item.settings.badge_type == 'html' and hcs_first_item.settings.badge_html != blank -%}
+                    <span class="hcs-trigger-badge">{{ hcs_first_item.settings.badge_html }}</span>
+                  {%- endif -%}
+
+                  {%- if hcs_selector_block.settings.show_trigger_text -%}
+                    <span class="hcs-trigger-text">{{ hcs_selector_block.settings.trigger_label | default: 'Select Country' }}</span>
+                  {%- endif -%}
+
+                  <span class="hcs-chevron" aria-hidden="true">
+                    <svg role="presentation" focusable="false" width="10" height="7" viewBox="0 0 10 7">
+                      <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                  </span>
+                </button>
+
+                <div
+                  class="hcs-dropdown"
+                  id="hcs-dropdown-{{ section.id }}"
+                  role="listbox"
+                  aria-label="{{ hcs_selector_block.settings.trigger_label | default: 'Select country' | escape }}"
+                  style="max-height: {{ hcs_selector_block.settings.dropdown_max_height | default: 300 }}px;"
+                >
+                  {%- for hcs_block in hcs_item_blocks -%}
+                    <a
+                      href="{{ hcs_block.settings.link | default: '#' }}"
+                      class="hcs-item"
+                      role="option"
+                      {%- if hcs_block.settings.open_new_window %} target="_blank" rel="noopener noreferrer"{%- endif %}
+                      {{ hcs_block.shopify_attributes }}
+                    >
+                      {%- if hcs_block.settings.badge_type == 'image' and hcs_block.settings.badge_image != blank -%}
+                        <span class="hcs-item-badge">
+                          {{- hcs_block.settings.badge_image | image_url: width: 40 | image_tag: loading: 'lazy', alt: hcs_block.settings.country_name -}}
+                        </span>
+                      {%- elsif hcs_block.settings.badge_type == 'html' and hcs_block.settings.badge_html != blank -%}
+                        <span class="hcs-item-badge">{{ hcs_block.settings.badge_html }}</span>
+                      {%- endif -%}
+                      <span class="hcs-item-name">{{ hcs_block.settings.country_name }}</span>
+                    </a>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+
           <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
             <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
             {%- render 'icon' with 'search' -%}
@@ -571,6 +824,55 @@ the underlying logic of the menu.
       heightObserver.style.height = (heightObserverHeight + bulletinBarHeight) + 'px';
     }
   });
+</script>
+
+<script>
+  (function () {
+    var hcsWrapper = document.getElementById('hcs-{{ section.id }}');
+    if (!hcsWrapper) return;
+
+    var hcsTrigger = hcsWrapper.querySelector('.hcs-trigger');
+    var hcsDropdown = hcsWrapper.querySelector('.hcs-dropdown');
+    if (!hcsTrigger || !hcsDropdown) return;
+
+    function hcsSetOpen(open) {
+      hcsWrapper.dataset.open = open ? 'true' : 'false';
+      hcsTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    hcsTrigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      hcsSetOpen(hcsWrapper.dataset.open !== 'true');
+    });
+
+    /* Close when clicking outside the wrapper */
+    document.addEventListener('click', function (e) {
+      if (!hcsWrapper.contains(e.target)) {
+        hcsSetOpen(false);
+      }
+    });
+
+    /* Close on Escape key */
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && hcsWrapper.dataset.open === 'true') {
+        hcsSetOpen(false);
+        hcsTrigger.focus();
+      }
+    });
+
+    /* Close when focus moves outside (tab navigation) */
+    hcsWrapper.addEventListener('focusout', function (e) {
+      if (!hcsWrapper.contains(e.relatedTarget)) {
+        hcsSetOpen(false);
+      }
+    });
+
+    /* Shopify theme editor: re-init when blocks are added/removed */
+    if (window.Shopify && Shopify.designMode) {
+      document.addEventListener('shopify:block:select', function () { hcsSetOpen(false); });
+      document.addEventListener('shopify:section:load', function () { hcsSetOpen(false); });
+    }
+  })();
 </script>
 
 {% schema %}
@@ -1277,6 +1579,93 @@ the underlying logic of the menu.
           "id": "tag_text",
           "label": "Tag Text",
           "default": "NEW"
+        }
+      ]
+    },
+    {
+      "type": "country_selector",
+      "name": "Country Selector",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Add 'Country Item' blocks below this block to populate the dropdown list. The first Country Item's badge is used as the default trigger icon."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_trigger_text",
+          "label": "Show label text next to icon",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "trigger_label",
+          "label": "Button label text",
+          "default": "Select Country",
+          "info": "Displayed only when 'Show label text' is enabled."
+        },
+        {
+          "type": "range",
+          "id": "dropdown_max_height",
+          "min": 100,
+          "max": 600,
+          "step": 10,
+          "unit": "px",
+          "label": "Dropdown max height",
+          "info": "The list will scroll when its content exceeds this height.",
+          "default": 300
+        }
+      ]
+    },
+    {
+      "type": "country_item",
+      "name": "Country Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "country_name",
+          "label": "Country name",
+          "default": "United States"
+        },
+        {
+          "type": "select",
+          "id": "badge_type",
+          "label": "Badge type",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image (image_picker)"
+            },
+            {
+              "value": "html",
+              "label": "SVG / HTML"
+            }
+          ],
+          "default": "html",
+          "info": "Choose 'Image' to upload a flag image, or 'SVG / HTML' to paste inline SVG code."
+        },
+        {
+          "type": "image_picker",
+          "id": "badge_image",
+          "label": "Badge image",
+          "info": "Used when badge type is 'Image'. Recommended: 40 × 40 px circular flag."
+        },
+        {
+          "type": "html",
+          "id": "badge_html",
+          "label": "Badge SVG / HTML",
+          "info": "Used when badge type is 'SVG / HTML'. Paste your inline SVG or HTML here."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Destination URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_new_window",
+          "label": "Open in new window / tab",
+          "default": false
         }
       ]
     }
