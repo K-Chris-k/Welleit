@@ -270,6 +270,13 @@ the underlying logic of the menu.
     justify-content: center;
   }
 
+  .hcs-trigger-badge.hcs-badge--flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    overflow: visible;
+  }
+
   .hcs-trigger-badge img {
     width: 100%;
     height: 100%;
@@ -403,6 +410,11 @@ the underlying logic of the menu.
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .hcs-item-badge.hcs-badge--flag {
+    border-radius: 0;
+    overflow: visible;
   }
 
   .hcs-item-badge img {
@@ -778,6 +790,16 @@ the underlying logic of the menu.
           {%- assign hcs_item_blocks = section.blocks | where: "type", "country_item" -%}
 
           {%- if hcs_item_blocks.size > 0 -%}
+            {%- assign hcs_uses_flags = false -%}
+            {%- for hcs_block in hcs_item_blocks -%}
+              {%- if hcs_block.settings.badge_type == 'flag' -%}
+                {%- assign hcs_uses_flags = true -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if hcs_uses_flags -%}
+              <link rel="stylesheet" href="{{ 'country-flags.css' | asset_url }}" media="print" onload="this.media='all'; this.onload = null">
+            {%- endif -%}
+
             {%- assign hcs_first_item = hcs_item_blocks | first -%}
             {%- assign hcs_trigger_label = 'Select country' -%}
             {%- assign hcs_show_trigger_text = false -%}
@@ -805,7 +827,11 @@ the underlying logic of the menu.
                   aria-controls="hcs-dropdown-{{ section.id }}"
                   aria-label="{{ hcs_trigger_label | escape }}"
                 >
-                  {%- if hcs_first_item.settings.badge_type == 'image' and hcs_first_item.settings.badge_image != blank -%}
+                  {%- if hcs_first_item.settings.badge_type == 'flag' and hcs_first_item.settings.country_code != blank -%}
+                    <span class="hcs-trigger-badge hcs-badge--flag">
+                      <span class="country-flags country-flags--{{ hcs_first_item.settings.country_code | upcase }}"></span>
+                    </span>
+                  {%- elsif hcs_first_item.settings.badge_type == 'image' and hcs_first_item.settings.badge_image != blank -%}
                     <span class="hcs-trigger-badge">
                       {{- hcs_first_item.settings.badge_image | image_url: width: 44 | image_tag: loading: 'lazy', alt: hcs_first_item.settings.country_name -}}
                     </span>
@@ -845,7 +871,11 @@ the underlying logic of the menu.
                         {%- if hcs_block.settings.open_new_window %} target="_blank" rel="noopener noreferrer"{%- endif %}
                         {{ hcs_block.shopify_attributes }}
                       >
-                        {%- if hcs_block.settings.badge_type == 'image' and hcs_block.settings.badge_image != blank -%}
+                        {%- if hcs_block.settings.badge_type == 'flag' and hcs_block.settings.country_code != blank -%}
+                          <span class="hcs-item-badge hcs-badge--flag">
+                            <span class="country-flags country-flags--{{ hcs_block.settings.country_code | upcase }}"></span>
+                          </span>
+                        {%- elsif hcs_block.settings.badge_type == 'image' and hcs_block.settings.badge_image != blank -%}
                           <span class="hcs-item-badge">
                             {{- hcs_block.settings.badge_image | image_url: width: 40 | image_tag: loading: 'lazy', alt: hcs_block.settings.country_name -}}
                           </span>
@@ -1773,7 +1803,7 @@ the underlying logic of the menu.
       "settings": [
         {
           "type": "paragraph",
-          "content": "Add 'Country Item' blocks below this block to populate the dropdown list. The first Country Item's badge is used as the default trigger icon."
+          "content": "Add 'Country Item' blocks below this block to populate the dropdown list. The first Country Item's badge is used as the default trigger icon. Use 'Built-in flag' badge type to auto-display flags via country code (e.g. US, CA, GB, EUROPE) — no image upload needed."
         },
         {
           "type": "checkbox",
@@ -1824,16 +1854,26 @@ the underlying logic of the menu.
           "label": "Badge type",
           "options": [
             {
+              "value": "flag",
+              "label": "Built-in flag"
+            },
+            {
               "value": "image",
-              "label": "Image (image_picker)"
+              "label": "Image (upload)"
             },
             {
               "value": "html",
-              "label": "SVG / HTML"
+              "label": "SVG / HTML (custom)"
             }
           ],
-          "default": "html",
-          "info": "Choose 'Image' to upload a flag image, or 'SVG / HTML' to paste inline SVG code."
+          "default": "flag",
+          "info": "Built-in flag uses the theme's country-flags sprite — just enter a country code, no upload needed."
+        },
+        {
+          "type": "text",
+          "id": "country_code",
+          "label": "Country code",
+          "default": "US"
         },
         {
           "type": "image_picker",
