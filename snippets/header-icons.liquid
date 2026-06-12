@@ -1,0 +1,375 @@
+{%- doc -%}
+  Renders header navigation icons with localization, search, account, and cart features.
+
+  Provides desktop/mobile navigation elements with dropdowns and dynamic functionality.
+
+  @param {object} section - Section object with localization and menu settings
+  @param {string} context - Position identifier for unique IDs ('start' or 'end')
+  @param {boolean} [show_hamburger] - Display mobile menu button
+  @param {boolean} [show_search] - Display search icon/button
+  @param {boolean} [show_account] - Display account link
+  @param {boolean} [show_cart] - Display cart with item count
+  @param {boolean} [show_toggle] - Display desktop menu toggle
+
+  @example
+  {% render 'header-icons',
+     section: section,
+     context: 'start',
+     show_toggle: true,
+     show_search: true
+  %}
+{%- enddoc -%}
+
+{%- liquid
+  assign country_switcher_block = blank
+  assign default_country_item = blank
+  assign country_switcher_items_count = 0
+
+  for block in section.blocks
+    if block.type == 'country_switcher'
+      assign country_switcher_block = block
+    elsif block.type == 'country_switcher_item'
+      assign country_switcher_items_count = country_switcher_items_count | plus: 1
+
+      if default_country_item == blank
+        assign default_country_item = block
+      endif
+
+      if block.settings.is_default
+        assign default_country_item = block
+      endif
+    endif
+  endfor
+
+  assign enable_custom_country_switcher = false
+  if context == 'end' and country_switcher_block != blank and country_switcher_items_count > 0 and country_switcher_block.settings.enable
+    assign enable_custom_country_switcher = true
+  endif
+
+  assign show_mobile_country_trigger = false
+  if context == 'start' and country_switcher_block != blank and country_switcher_items_count > 0 and country_switcher_block.settings.enable
+    assign show_mobile_country_trigger = true
+  endif
+
+  if section.settings.enable_language_selector_desktop and localization.available_languages.size > 1
+    assign enable_language_selector = true
+  endif
+  if section.settings.enable_country_selector_desktop and localization.available_countries.size > 1
+    assign enable_country_selector = true
+    assign show_country_name = section.settings.show_country_name_dekstop
+    assign show_country_flag = section.settings.show_country_flag_desktop
+  endif
+
+  if enable_language_selector or enable_country_selector
+    assign show_color_localization = false
+    if section.settings.color_localization != blank and section.settings.color_localization != 'rgba(0,0,0,0)'
+      assign show_color_localization = true
+    endif
+  endif
+
+  assign section_rendering_api = false
+  if section.index == nil
+    assign section_rendering_api = true
+  endif
+-%}
+
+<div class="header__icons header__icons--{{ context }} flex justify-{{ context }} z-2">
+  <div class="header__buttons flex items-center gap-1d5">
+    {%- if show_toggle -%}
+      <button class="menu-toggle-button hidden lg:flex items-center justify-center" type="button" is="menu-toggle" aria-controls="MenuToggle" aria-expanded="false">
+        <span class="sr-only">{{ 'general.drawers.navigation' | t }}</span>
+        {%- render 'icon', icon: 'hamburger', size: section.settings.icons_size -%}
+      </button>
+    {%- endif -%}
+
+    {%- if enable_language_selector or enable_country_selector -%}
+      <div class="header__menu hidden lg:flex">
+        <ul class="flex flex-nowrap list-menu with-block">
+          {%- if enable_language_selector -%}
+            <li class="localization{% if show_color_localization %} localization--colored{% endif %}">
+              <details is="details-dropdown" trigger="{% if section.settings.hover_menu %}hover{% else %}click{% endif %}" level="top">
+                <summary data-link="">
+                  <magnet-element class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer" data-magnet="0">
+                    {%- unless section_rendering_api -%}
+                      <api-button class="api-only" data-id="header_localization_language_form_{{ context }}" data-section-id="{{ section.id }}"></api-button>
+                    {%- endunless -%}
+                    <span class="btn-text" data-text>
+                      {%- liquid
+                        echo localization.language.endonym_name | capitalize
+                        unless section.settings.hover_menu
+                          render 'icon', icon: 'chevron-menu', class: 'shrink-0'
+                        endunless
+                      -%}
+                    </span>
+                    <span class="btn-text btn-duplicate">
+                      {%- liquid
+                        echo localization.language.endonym_name | capitalize
+                        unless section.settings.hover_menu
+                          render 'icon', icon: 'chevron-menu', class: 'shrink-0'
+                        endunless
+                      -%}
+                    </span>
+                  </magnet-element>
+                </summary>
+                <div class="dropdown opacity-0 invisible absolute top-0 max-w-full pointer-events-none">
+                  {%- unless section_rendering_api -%}
+                    <div id="header_localization_language_form_{{ context }}" class="dropdown__container relative"></div>
+                  {%- else -%}
+                    {%- assign form_id = 'header_localization_language_form_' | append: context -%}
+                    {%- form 'localization', id: form_id, class: 'dropdown__container relative', is: 'localization-listbox' -%}
+                      {%- render 'corner', dir: 'top', prefix: 'dropdown' -%}
+                      <ul class="dropdown__nav flex flex-col gap-1d5 xl:gap-2" role="list">
+                        {%- for language in localization.available_languages -%}
+                          <li class="opacity-0">
+                            <p>
+                              <a class="reversed-link{% if language.iso_code == localization.language.iso_code %} active pointer-events-none{% endif %}"
+                                href="#"
+                                hreflang="{{ language.iso_code }}"
+                                lang="{{ language.iso_code }}"
+                                {% if language.iso_code == localization.language.iso_code %}
+                                  aria-current="true"
+                                {% endif %}
+                                data-value="{{ language.iso_code }}"
+                                title="{{ language.endonym_name | capitalize | escape }}"
+                                data-no-instant
+                              >
+                                {{- language.endonym_name | capitalize -}}
+                              </a>
+                            </p>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                      <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}" />
+                    {%- endform -%}
+                  {%- endunless -%}
+                </div>
+              </details>
+            </li>
+          {% endif %}
+
+          {%- if enable_country_selector -%}
+            <li class="localization{% if show_color_localization %} localization--colored{% endif %}">
+              <details is="details-dropdown" trigger="{% if section.settings.hover_menu %}hover{% else %}click{% endif %}" level="top">
+                <summary data-link="">
+                  <magnet-element class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer" data-magnet="0">
+                    {%- unless section_rendering_api -%}
+                      <api-button class="api-only" data-id="header_localization_country_form_{{ context }}" data-section-id="{{ section.id }}"></api-button>
+                    {%- endunless -%}
+                    {%- capture localization_country -%}
+                      {%- if show_country_flag -%}
+                        <span class="country-flag shrink-0 media media--rounded relative overflow-hidden">
+                          {{- localization.country | image_url: width: 60, format: 'jpg' | image_tag: loading: 'lazy', class: 'rounded-full', is: 'lazy-image' -}}
+                        </span>
+                      {%- endif -%}
+                      {%- if show_country_name -%}
+                        {{- localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+                      {%- else -%}
+                        <span class="whitespace-nowrap">
+                          {{- localization.country.currency.iso_code }} {{ localization.country.currency.symbol -}}
+                        </span>
+                      {%- endif -%}
+                      {%- liquid
+                        unless section.settings.hover_menu
+                          render 'icon', icon: 'chevron-menu', class: 'shrink-0'
+                        endunless
+                      -%}
+                    {%- endcapture -%}
+
+                    <span class="btn-text" data-text>{{ localization_country }}</span>
+                    <span class="btn-text btn-duplicate">{{ localization_country }}</span>
+                  </magnet-element>
+                </summary>
+                <div class="dropdown opacity-0 invisible absolute top-0 max-w-full pointer-events-none">
+                  {%- unless section_rendering_api -%}
+                    <div id="header_localization_country_form_{{ context }}" class="dropdown__container relative"></div>
+                  {%- else -%}
+                    {%- assign form_id = 'header_localization_country_form_' | append: context -%}
+                    {%- form 'localization', id: form_id, class: 'dropdown__container relative', is: 'localization-listbox' -%}
+                      {%- render 'corner', dir: 'top', prefix: 'dropdown' -%}
+                      <ul class="dropdown__nav flex flex-col gap-1d5 xl:gap-2" role="list">
+                        {%- for country in localization.available_countries -%}
+                          <li class="opacity-0">
+                            <p>
+                              <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
+                                href="#"
+                                {% if country.iso_code == localization.country.iso_code %}
+                                  aria-current="true"
+                                {% endif %}
+                                data-value="{{ country.iso_code }}"
+                                title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+                                data-no-instant
+                              >
+                                {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                              </a>
+                            </p>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                      <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}" />
+                    {%- endform -%}
+                  {%- endunless -%}
+                </div>
+              </details>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    {%- endif -%}
+
+    {%- if enable_custom_country_switcher -%}
+        {%- capture selected_country_flag -%}
+          {%- if default_country_item.settings.flag_type == 'svg' and default_country_item.settings.flag_svg != blank -%}
+            <span class="header-country-switcher__flag header-country-switcher__flag--svg shrink-0" aria-hidden="true">
+              {{- default_country_item.settings.flag_svg -}}
+            </span>
+          {%- elsif default_country_item.settings.flag_image != blank -%}
+            <span class="header-country-switcher__flag shrink-0 media media--rounded relative overflow-hidden" aria-hidden="true">
+              {{- default_country_item.settings.flag_image | image_url: width: 40, height: 40, crop: 'center' | image_tag: loading: 'lazy', width: 20, height: 20, class: 'rounded-full', is: 'lazy-image' -}}
+            </span>
+          {%- else -%}
+            <span class="header-country-switcher__flag header-country-switcher__flag--placeholder shrink-0" aria-hidden="true"></span>
+          {%- endif -%}
+        {%- endcapture -%}
+
+        <details is="details-dropdown" trigger="click" level="top" class="header-country-switcher hidden lg:block relative" {{ country_switcher_block.shopify_attributes }}>
+          <summary data-link="" class="header-country-switcher__summary flex items-center gap-2 cursor-pointer list-none" aria-label="{{ country_switcher_block.settings.desktop_aria_label | default: 'Country selector' | escape }}">
+            {{ selected_country_flag }}
+            <svg role="presentation" focusable="false" width="10" height="7" class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+              <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </summary>
+          <div class="header-country-switcher__desktop-panel absolute right-0 mt-2">
+            <ul class="header-country-switcher__list" role="list" style="max-height: {{ country_switcher_block.settings.list_max_height }}px;">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'country_switcher_item' -%}
+                  <li>
+                    <a class="header-country-switcher__item flex items-center gap-2d5" href="{{ block.settings.link | default: '#' }}"
+                      {% if block.settings.open_new_window %}target="_blank" rel="noopener noreferrer"{% endif %}
+                    >
+                      {%- if block.settings.flag_type == 'svg' and block.settings.flag_svg != blank -%}
+                        <span class="header-country-switcher__flag header-country-switcher__flag--svg shrink-0" aria-hidden="true">
+                          {{- block.settings.flag_svg -}}
+                        </span>
+                      {%- elsif block.settings.flag_image != blank -%}
+                        <span class="header-country-switcher__flag shrink-0 media media--rounded relative overflow-hidden" aria-hidden="true">
+                          {{- block.settings.flag_image | image_url: width: 40, height: 40, crop: 'center' | image_tag: loading: 'lazy', width: 20, height: 20, class: 'rounded-full', is: 'lazy-image' -}}
+                        </span>
+                      {%- else -%}
+                        <span class="header-country-switcher__flag header-country-switcher__flag--placeholder shrink-0" aria-hidden="true"></span>
+                      {%- endif -%}
+                      <span>{{ block.settings.country_name | escape }}</span>
+                    </a>
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        </details>
+
+        <modal-element id="HeaderCountrySwitcher-{{ section.id }}" class="header-country-switcher__mobile-modal modal lg:hidden" role="dialog" hidden>
+          <overlay-element class="header-country-switcher__mobile-overlay opacity-0 fixed top-0 left-0 w-full h-full" aria-controls="HeaderCountrySwitcher-{{ section.id }}" aria-expanded="false"></overlay-element>
+          <div class="header-country-switcher__mobile-sheet fixed left-0 bottom-0 w-full">
+            <div class="header-country-switcher__mobile-panel flex flex-col overflow-hidden">
+              <button class="header-country-switcher__mobile-close flex items-center justify-center absolute" type="button" aria-controls="HeaderCountrySwitcher-{{ section.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+                <svg role="presentation" stroke-width="2" focusable="false" width="24" height="24" class="icon icon-close" viewBox="0 0 24 24">
+                  <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+                </svg>
+              </button>
+              <p class="h5" slot="title">{{ country_switcher_block.settings.mobile_title | escape }}</p>
+              {%- if country_switcher_block.settings.mobile_description != blank -%}
+                <p class="header-country-switcher__mobile-description">{{ country_switcher_block.settings.mobile_description | escape }}</p>
+              {%- endif -%}
+              <ul class="header-country-switcher__list" role="list" style="max-height: {{ country_switcher_block.settings.list_max_height }}px;">
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'country_switcher_item' -%}
+                    <li>
+                      <a class="header-country-switcher__item flex items-center gap-2d5" href="{{ block.settings.link | default: '#' }}"
+                        {% if block.settings.open_new_window %}target="_blank" rel="noopener noreferrer"{% endif %}
+                      >
+                        {%- if block.settings.flag_type == 'svg' and block.settings.flag_svg != blank -%}
+                          <span class="header-country-switcher__flag header-country-switcher__flag--svg shrink-0" aria-hidden="true">
+                            {{- block.settings.flag_svg -}}
+                          </span>
+                        {%- elsif block.settings.flag_image != blank -%}
+                          <span class="header-country-switcher__flag shrink-0 media media--rounded relative overflow-hidden" aria-hidden="true">
+                            {{- block.settings.flag_image | image_url: width: 40, height: 40, crop: 'center' | image_tag: loading: 'lazy', width: 20, height: 20, class: 'rounded-full', is: 'lazy-image' -}}
+                          </span>
+                        {%- else -%}
+                          <span class="header-country-switcher__flag header-country-switcher__flag--placeholder shrink-0" aria-hidden="true"></span>
+                        {%- endif -%}
+                        <span>{{ block.settings.country_name | escape }}</span>
+                      </a>
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        </modal-element>
+    {%- endif -%}
+
+    {%- if show_search and settings.enable_search -%}
+      <a href="{{ routes.search_url }}" class="search-drawer-button flex items-center justify-center" is="magnet-link" aria-controls="SearchDrawer" aria-expanded="false" >
+        <span class="sr-only">{{ 'general.search.title' | t }}</span>
+        {%- render 'icon', icon: 'search', size: section.settings.icons_size -%}
+      </a>
+    {%- endif -%}
+
+    {%- if show_account and shop.customer_accounts_enabled -%}
+      <shopify-account class="hidden lg:flex items-center justify-center" menu="{{ settings.customer_account_menu }}">
+        <magnet-element class="block" slot="signed-out-avatar">
+          <span class="sr-only">
+            {%- liquid
+              if customer
+                echo 'customer.account.title' | t
+              else
+                echo 'customer.login.title' | t
+              endif
+            -%}
+          </span>
+          {%- render 'icon', icon: 'account', size: section.settings.icons_size -%}
+        </magnet-element>
+      </shopify-account>
+    {%- endif -%}
+
+    {%- if show_cart -%}
+      <a href="{{ routes.cart_url }}" class="cart-drawer-button flex items-center justify-center relative" is="magnet-link" aria-controls="CartDrawer" aria-expanded="false" data-no-instant>
+        <span class="sr-only">{{ 'general.cart.title' | t }}</span>
+        {%- render 'icon', icon: 'cart', size: section.settings.icons_size -%}
+        <cart-count class="count absolute top-0 right-0 text-xs" aria-label="{{ 'general.cart.cart_count' | t: count: cart.item_count | escape }}"{% if cart == empty %} hidden{% endif %}>{{ cart.item_count }}</cart-count>
+      </a>
+    {%- endif -%}
+
+    {%- if show_hamburger -%}
+      <button class="menu-drawer-button flex items-center gap-2d5 justify-center" type="button" is="magnet-button" aria-controls="MenuDrawer" aria-expanded="false">
+        <span class="sr-only">{{ 'general.drawers.navigation' | t }}</span>
+        {%- render 'icon', icon: 'hamburger', size: section.settings.icons_size -%}
+        {%- if section.settings.menu_drawer_icon_label != blank -%}
+          <span class="hidden md:inline" aria-hidden="true">{{ section.settings.menu_drawer_icon_label }}</span>
+        {%- endif -%}
+      </button>
+
+      {%- if show_mobile_country_trigger -%}
+        {%- capture mobile_flag -%}
+          {%- if default_country_item.settings.flag_type == 'svg' and default_country_item.settings.flag_svg != blank -%}
+            <span class="header-country-switcher__flag header-country-switcher__flag--svg shrink-0" aria-hidden="true">
+              {{- default_country_item.settings.flag_svg -}}
+            </span>
+          {%- elsif default_country_item.settings.flag_image != blank -%}
+            <span class="header-country-switcher__flag shrink-0 media media--rounded relative overflow-hidden" aria-hidden="true">
+              {{- default_country_item.settings.flag_image | image_url: width: 40, height: 40, crop: 'center' | image_tag: loading: 'lazy', width: 20, height: 20, class: 'rounded-full', is: 'lazy-image' -}}
+            </span>
+          {%- else -%}
+            <span class="header-country-switcher__flag header-country-switcher__flag--placeholder shrink-0" aria-hidden="true"></span>
+          {%- endif -%}
+        {%- endcapture -%}
+        <button type="button" class="header-country-switcher__mobile-trigger flex lg:hidden items-center justify-center" aria-controls="HeaderCountrySwitcher-{{ section.id }}" aria-expanded="false" aria-label="{{ country_switcher_block.settings.mobile_aria_label | default: 'Country selector' | escape }}">
+          {{ mobile_flag }}
+          <svg role="presentation" focusable="false" width="10" height="7" class="icon icon-chevron-bottom" viewBox="0 0 10 7">
+            <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </button>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+</div>
